@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		B83F470B28903DF50070E13F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F470A28903DF50070E13F /* AppDelegate.swift */; };
 		B83F470D28903DF50070E13F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F470C28903DF50070E13F /* SceneDelegate.swift */; };
-		B83F470F28903DF50070E13F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F470E28903DF50070E13F /* ViewController.swift */; };
 		B83F471228903DF50070E13F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83F471028903DF50070E13F /* Main.storyboard */; };
 		B83F471428903DF70070E13F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83F471328903DF70070E13F /* Assets.xcassets */; };
 		B83F471728903DF70070E13F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83F471528903DF70070E13F /* LaunchScreen.storyboard */; };
 		B83F472228903DF70070E13F /* ValorantGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F472128903DF70070E13F /* ValorantGuideTests.swift */; };
 		B83F472C28903DF70070E13F /* ValorantGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F472B28903DF70070E13F /* ValorantGuideUITests.swift */; };
 		B83F472E28903DF70070E13F /* ValorantGuideUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F472D28903DF70070E13F /* ValorantGuideUITestsLaunchTests.swift */; };
+		B8A63ECC2893E492006F9981 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ECB2893E492006F9981 /* View.swift */; };
+		B8A63ECE2893E49F006F9981 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ECD2893E49F006F9981 /* Interactor.swift */; };
+		B8A63ED02893E4AB006F9981 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ECF2893E4AB006F9981 /* Presenter.swift */; };
+		B8A63ED22893E4B8006F9981 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ED12893E4B8006F9981 /* Entity.swift */; };
+		B8A63ED42893E4C9006F9981 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ED32893E4C9006F9981 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,6 @@
 		B83F470728903DF50070E13F /* ValorantGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValorantGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83F470A28903DF50070E13F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B83F470C28903DF50070E13F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B83F470E28903DF50070E13F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B83F471128903DF50070E13F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B83F471328903DF70070E13F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B83F471628903DF70070E13F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		B83F472728903DF70070E13F /* ValorantGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValorantGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83F472B28903DF70070E13F /* ValorantGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantGuideUITests.swift; sourceTree = "<group>"; };
 		B83F472D28903DF70070E13F /* ValorantGuideUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantGuideUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B8A63ECB2893E492006F9981 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		B8A63ECD2893E49F006F9981 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		B8A63ECF2893E4AB006F9981 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		B8A63ED12893E4B8006F9981 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		B8A63ED32893E4C9006F9981 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +107,9 @@
 		B83F470928903DF50070E13F /* ValorantGuide */ = {
 			isa = PBXGroup;
 			children = (
+				B8A63ECA2893E482006F9981 /* Viper */,
 				B83F470A28903DF50070E13F /* AppDelegate.swift */,
 				B83F470C28903DF50070E13F /* SceneDelegate.swift */,
-				B83F470E28903DF50070E13F /* ViewController.swift */,
 				B83F471028903DF50070E13F /* Main.storyboard */,
 				B83F471328903DF70070E13F /* Assets.xcassets */,
 				B83F471528903DF70070E13F /* LaunchScreen.storyboard */,
@@ -125,6 +133,18 @@
 				B83F472D28903DF70070E13F /* ValorantGuideUITestsLaunchTests.swift */,
 			);
 			path = ValorantGuideUITests;
+			sourceTree = "<group>";
+		};
+		B8A63ECA2893E482006F9981 /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				B8A63ECB2893E492006F9981 /* View.swift */,
+				B8A63ECD2893E49F006F9981 /* Interactor.swift */,
+				B8A63ECF2893E4AB006F9981 /* Presenter.swift */,
+				B8A63ED12893E4B8006F9981 /* Entity.swift */,
+				B8A63ED32893E4C9006F9981 /* Router.swift */,
+			);
+			path = Viper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B83F470F28903DF50070E13F /* ViewController.swift in Sources */,
 				B83F470B28903DF50070E13F /* AppDelegate.swift in Sources */,
 				B83F470D28903DF50070E13F /* SceneDelegate.swift in Sources */,
+				B8A63ED22893E4B8006F9981 /* Entity.swift in Sources */,
+				B8A63ED42893E4C9006F9981 /* Router.swift in Sources */,
+				B8A63ECE2893E49F006F9981 /* Interactor.swift in Sources */,
+				B8A63ECC2893E492006F9981 /* View.swift in Sources */,
+				B8A63ED02893E4AB006F9981 /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
