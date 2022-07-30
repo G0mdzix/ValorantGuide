@@ -15,11 +15,14 @@
 		B83F472228903DF70070E13F /* ValorantGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F472128903DF70070E13F /* ValorantGuideTests.swift */; };
 		B83F472C28903DF70070E13F /* ValorantGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F472B28903DF70070E13F /* ValorantGuideUITests.swift */; };
 		B83F472E28903DF70070E13F /* ValorantGuideUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F472D28903DF70070E13F /* ValorantGuideUITestsLaunchTests.swift */; };
-		B8A63ECC2893E492006F9981 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ECB2893E492006F9981 /* View.swift */; };
-		B8A63ECE2893E49F006F9981 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ECD2893E49F006F9981 /* Interactor.swift */; };
-		B8A63ED02893E4AB006F9981 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ECF2893E4AB006F9981 /* Presenter.swift */; };
-		B8A63ED22893E4B8006F9981 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ED12893E4B8006F9981 /* Entity.swift */; };
-		B8A63ED42893E4C9006F9981 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ED32893E4C9006F9981 /* Router.swift */; };
+		B8A63ECC2893E492006F9981 /* AgentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ECB2893E492006F9981 /* AgentsViewController.swift */; };
+		B8A63ECE2893E49F006F9981 /* AgentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ECD2893E49F006F9981 /* AgentsInteractor.swift */; };
+		B8A63ED02893E4AB006F9981 /* AgentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ECF2893E4AB006F9981 /* AgentsPresenter.swift */; };
+		B8A63ED22893E4B8006F9981 /* AgentsListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ED12893E4B8006F9981 /* AgentsListEntity.swift */; };
+		B8A63ED42893E4C9006F9981 /* AgentsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ED32893E4C9006F9981 /* AgentsRouter.swift */; };
+		B8A63ED62894A8AF006F9981 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ED52894A8AF006F9981 /* Protocols.swift */; };
+		B8A63ED92894A993006F9981 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ED82894A993006F9981 /* Constans.swift */; };
+		B8A63EDB2894A9A1006F9981 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63EDA2894A9A1006F9981 /* EndPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,11 +55,14 @@
 		B83F472728903DF70070E13F /* ValorantGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValorantGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83F472B28903DF70070E13F /* ValorantGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantGuideUITests.swift; sourceTree = "<group>"; };
 		B83F472D28903DF70070E13F /* ValorantGuideUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantGuideUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B8A63ECB2893E492006F9981 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		B8A63ECD2893E49F006F9981 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
-		B8A63ECF2893E4AB006F9981 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		B8A63ED12893E4B8006F9981 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
-		B8A63ED32893E4C9006F9981 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B8A63ECB2893E492006F9981 /* AgentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsViewController.swift; sourceTree = "<group>"; };
+		B8A63ECD2893E49F006F9981 /* AgentsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsInteractor.swift; sourceTree = "<group>"; };
+		B8A63ECF2893E4AB006F9981 /* AgentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsPresenter.swift; sourceTree = "<group>"; };
+		B8A63ED12893E4B8006F9981 /* AgentsListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsListEntity.swift; sourceTree = "<group>"; };
+		B8A63ED32893E4C9006F9981 /* AgentsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsRouter.swift; sourceTree = "<group>"; };
+		B8A63ED52894A8AF006F9981 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		B8A63ED82894A993006F9981 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		B8A63EDA2894A9A1006F9981 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,13 +144,24 @@
 		B8A63ECA2893E482006F9981 /* Viper */ = {
 			isa = PBXGroup;
 			children = (
-				B8A63ECB2893E492006F9981 /* View.swift */,
-				B8A63ECD2893E49F006F9981 /* Interactor.swift */,
-				B8A63ECF2893E4AB006F9981 /* Presenter.swift */,
-				B8A63ED12893E4B8006F9981 /* Entity.swift */,
-				B8A63ED32893E4C9006F9981 /* Router.swift */,
+				B8A63ECB2893E492006F9981 /* AgentsViewController.swift */,
+				B8A63ECD2893E49F006F9981 /* AgentsInteractor.swift */,
+				B8A63ECF2893E4AB006F9981 /* AgentsPresenter.swift */,
+				B8A63ED12893E4B8006F9981 /* AgentsListEntity.swift */,
+				B8A63ED32893E4C9006F9981 /* AgentsRouter.swift */,
+				B8A63ED52894A8AF006F9981 /* Protocols.swift */,
+				B8A63ED72894A982006F9981 /* Common */,
 			);
 			path = Viper;
+			sourceTree = "<group>";
+		};
+		B8A63ED72894A982006F9981 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B8A63ED82894A993006F9981 /* Constans.swift */,
+				B8A63EDA2894A9A1006F9981 /* EndPoint.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,11 +297,14 @@
 			files = (
 				B83F470B28903DF50070E13F /* AppDelegate.swift in Sources */,
 				B83F470D28903DF50070E13F /* SceneDelegate.swift in Sources */,
-				B8A63ED22893E4B8006F9981 /* Entity.swift in Sources */,
-				B8A63ED42893E4C9006F9981 /* Router.swift in Sources */,
-				B8A63ECE2893E49F006F9981 /* Interactor.swift in Sources */,
-				B8A63ECC2893E492006F9981 /* View.swift in Sources */,
-				B8A63ED02893E4AB006F9981 /* Presenter.swift in Sources */,
+				B8A63EDB2894A9A1006F9981 /* EndPoint.swift in Sources */,
+				B8A63ED92894A993006F9981 /* Constans.swift in Sources */,
+				B8A63ED22893E4B8006F9981 /* AgentsListEntity.swift in Sources */,
+				B8A63ED42893E4C9006F9981 /* AgentsRouter.swift in Sources */,
+				B8A63ECE2893E49F006F9981 /* AgentsInteractor.swift in Sources */,
+				B8A63ECC2893E492006F9981 /* AgentsViewController.swift in Sources */,
+				B8A63ED02893E4AB006F9981 /* AgentsPresenter.swift in Sources */,
+				B8A63ED62894A8AF006F9981 /* Protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
