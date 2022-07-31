@@ -8,4 +8,5 @@ import Foundation
      let displayName: String
      let developerName: String
      let description: String
+     let displayIconSmall: String
  }

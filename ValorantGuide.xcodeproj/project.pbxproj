@@ -15,6 +15,9 @@
 		B83F472228903DF70070E13F /* ValorantGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F472128903DF70070E13F /* ValorantGuideTests.swift */; };
 		B83F472C28903DF70070E13F /* ValorantGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F472B28903DF70070E13F /* ValorantGuideUITests.swift */; };
 		B83F472E28903DF70070E13F /* ValorantGuideUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F472D28903DF70070E13F /* ValorantGuideUITestsLaunchTests.swift */; };
+		B84405F728955E5C00609B95 /* AgentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84405F628955E5C00609B95 /* AgentsTableViewCell.swift */; };
+		B84405FA2895696D00609B95 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84405F92895696D00609B95 /* UIViewExtension.swift */; };
+		B84405FC2895F57E00609B95 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84405FB2895F57E00609B95 /* Colors.swift */; };
 		B8A63ECC2893E492006F9981 /* AgentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ECB2893E492006F9981 /* AgentsViewController.swift */; };
 		B8A63ECE2893E49F006F9981 /* AgentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ECD2893E49F006F9981 /* AgentsInteractor.swift */; };
 		B8A63ED02893E4AB006F9981 /* AgentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ECF2893E4AB006F9981 /* AgentsPresenter.swift */; };
@@ -23,6 +26,7 @@
 		B8A63ED62894A8AF006F9981 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ED52894A8AF006F9981 /* Protocols.swift */; };
 		B8A63ED92894A993006F9981 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ED82894A993006F9981 /* Constans.swift */; };
 		B8A63EDB2894A9A1006F9981 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63EDA2894A9A1006F9981 /* EndPoint.swift */; };
+		DBC8CD50449F2CC42DB49BAF /* Pods_ValorantGuide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE3411C3D8F8D7193A5961F /* Pods_ValorantGuide.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BE3411C3D8F8D7193A5961F /* Pods_ValorantGuide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ValorantGuide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F58EE8CAAE1E309EFDCA4A /* Pods-ValorantGuide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ValorantGuide.release.xcconfig"; path = "Target Support Files/Pods-ValorantGuide/Pods-ValorantGuide.release.xcconfig"; sourceTree = "<group>"; };
+		9AF3A5863E6E558787DE975A /* Pods-ValorantGuide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ValorantGuide.debug.xcconfig"; path = "Target Support Files/Pods-ValorantGuide/Pods-ValorantGuide.debug.xcconfig"; sourceTree = "<group>"; };
 		B83F470728903DF50070E13F /* ValorantGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValorantGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83F470A28903DF50070E13F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B83F470C28903DF50070E13F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +62,9 @@
 		B83F472728903DF70070E13F /* ValorantGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValorantGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83F472B28903DF70070E13F /* ValorantGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantGuideUITests.swift; sourceTree = "<group>"; };
 		B83F472D28903DF70070E13F /* ValorantGuideUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantGuideUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B84405F628955E5C00609B95 /* AgentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsTableViewCell.swift; sourceTree = "<group>"; };
+		B84405F92895696D00609B95 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		B84405FB2895F57E00609B95 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B8A63ECB2893E492006F9981 /* AgentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsViewController.swift; sourceTree = "<group>"; };
 		B8A63ECD2893E49F006F9981 /* AgentsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsInteractor.swift; sourceTree = "<group>"; };
 		B8A63ECF2893E4AB006F9981 /* AgentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsPresenter.swift; sourceTree = "<group>"; };
@@ -70,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC8CD50449F2CC42DB49BAF /* Pods_ValorantGuide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +101,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1717D0FF73AB812FC89BF29C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BE3411C3D8F8D7193A5961F /* Pods_ValorantGuide.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B3C25EF0621BE415CC7072A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AF3A5863E6E558787DE975A /* Pods-ValorantGuide.debug.xcconfig */,
+				65F58EE8CAAE1E309EFDCA4A /* Pods-ValorantGuide.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B83F46FE28903DF50070E13F = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +125,8 @@
 				B83F472028903DF70070E13F /* ValorantGuideTests */,
 				B83F472A28903DF70070E13F /* ValorantGuideUITests */,
 				B83F470828903DF50070E13F /* Products */,
+				9B3C25EF0621BE415CC7072A /* Pods */,
+				1717D0FF73AB812FC89BF29C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,9 +171,27 @@
 			path = ValorantGuideUITests;
 			sourceTree = "<group>";
 		};
+		B84405F528955E5000609B95 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B84405F628955E5C00609B95 /* AgentsTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B84405F82895695700609B95 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B84405F92895696D00609B95 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B8A63ECA2893E482006F9981 /* Viper */ = {
 			isa = PBXGroup;
 			children = (
+				B84405F82895695700609B95 /* Extensions */,
+				B84405F528955E5000609B95 /* Cell */,
 				B8A63ECB2893E492006F9981 /* AgentsViewController.swift */,
 				B8A63ECD2893E49F006F9981 /* AgentsInteractor.swift */,
 				B8A63ECF2893E4AB006F9981 /* AgentsPresenter.swift */,
@@ -160,6 +208,7 @@
 			children = (
 				B8A63ED82894A993006F9981 /* Constans.swift */,
 				B8A63EDA2894A9A1006F9981 /* EndPoint.swift */,
+				B84405FB2895F57E00609B95 /* Colors.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -171,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B83F473128903DF70070E13F /* Build configuration list for PBXNativeTarget "ValorantGuide" */;
 			buildPhases = (
+				831FC568D3021B17FE4A51E3 /* [CP] Check Pods Manifest.lock */,
 				B83F470328903DF50070E13F /* Sources */,
 				B83F470428903DF50070E13F /* Frameworks */,
 				B83F470528903DF50070E13F /* Resources */,
+				921DB31CBD50E4CF04CF2AA9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,6 +341,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		831FC568D3021B17FE4A51E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ValorantGuide-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		921DB31CBD50E4CF04CF2AA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ValorantGuide/Pods-ValorantGuide-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ValorantGuide/Pods-ValorantGuide-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ValorantGuide/Pods-ValorantGuide-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B83F470328903DF50070E13F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -301,8 +394,11 @@
 				B8A63ED92894A993006F9981 /* Constans.swift in Sources */,
 				B8A63ED22893E4B8006F9981 /* AgentsListEntity.swift in Sources */,
 				B8A63ED42893E4C9006F9981 /* AgentsRouter.swift in Sources */,
+				B84405FA2895696D00609B95 /* UIViewExtension.swift in Sources */,
 				B8A63ECE2893E49F006F9981 /* AgentsInteractor.swift in Sources */,
+				B84405FC2895F57E00609B95 /* Colors.swift in Sources */,
 				B8A63ECC2893E492006F9981 /* AgentsViewController.swift in Sources */,
+				B84405F728955E5C00609B95 /* AgentsTableViewCell.swift in Sources */,
 				B8A63ED02893E4AB006F9981 /* AgentsPresenter.swift in Sources */,
 				B8A63ED62894A8AF006F9981 /* Protocols.swift in Sources */,
 			);
@@ -476,6 +572,7 @@
 		};
 		B83F473228903DF70070E13F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AF3A5863E6E558787DE975A /* Pods-ValorantGuide.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -504,6 +601,7 @@
 		};
 		B83F473328903DF70070E13F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F58EE8CAAE1E309EFDCA4A /* Pods-ValorantGuide.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

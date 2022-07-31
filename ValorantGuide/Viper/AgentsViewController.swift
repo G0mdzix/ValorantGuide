@@ -8,7 +8,7 @@ class AgentsViewController: UIViewController, AgentView, UITableViewDelegate, UI
     
     private let tableView: UITableView = {
        let table = UITableView()
-        table.register(UITableViewCell.self,
+        table.register(AgentsTableViewCell.self,
                        forCellReuseIdentifier: K.cell)
         table.isHidden = true
         return table
@@ -17,6 +17,7 @@ class AgentsViewController: UIViewController, AgentView, UITableViewDelegate, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(tableView)
+        tableView.backgroundColor = Colors.red
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -41,10 +42,16 @@ class AgentsViewController: UIViewController, AgentView, UITableViewDelegate, UI
         return agents.count
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 220.0
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.cell, for: indexPath)
-        cell.textLabel?.text = agents[indexPath.row].displayName
-        cell.textLabel?.text = agents[indexPath.row].developerName
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.cell, for: indexPath) as! AgentsTableViewCell
+        cell.agentNameLabel.text = agents[indexPath.row].displayName
+        cell.agentTitleDetailedLabel.text = agents[indexPath.row].developerName
+        cell.agentDescritpionLabel.text = agents[indexPath.row].description
+        cell.agentIconImageView.loadFrom(URLAddress: agents[indexPath.row].displayIconSmall)
         return cell
     }
 }
