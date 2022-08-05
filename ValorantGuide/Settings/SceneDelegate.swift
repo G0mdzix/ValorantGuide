@@ -5,17 +5,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
- 
+
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let agentRouter = AgentsRouter.start()
         let initialVC = agentRouter.entry
         
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = initialVC
+        window.rootViewController = UINavigationController(rootViewController: initialVC!)
+        //window.rootViewController = initialVC
         self.window = window
         window.makeKeyAndVisible()
-        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

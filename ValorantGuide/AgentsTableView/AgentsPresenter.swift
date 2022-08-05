@@ -1,11 +1,12 @@
 import Foundation
+import UIKit
 
 enum FetchError: Error {
     case failed
 }
 
 class AgentsPresenter: AgentPresenter {
-    
+
     var router: AgentRouter?
     var view: AgentView?
     var interactor: AgentInteractor?{
@@ -21,5 +22,9 @@ class AgentsPresenter: AgentPresenter {
         case .failure:
             view?.update(with: "Something went wrong")
         }
+    }
+    
+    func showAgentsDetailController(with agent: Agent, navigationController: UINavigationController) {
+        router?.pushToAgentsDetailView(with: agent, navigationConroller:navigationController)
     }
 }

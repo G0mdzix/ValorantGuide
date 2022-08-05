@@ -9,23 +9,26 @@
 /* Begin PBXBuildFile section */
 		B83F470B28903DF50070E13F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F470A28903DF50070E13F /* AppDelegate.swift */; };
 		B83F470D28903DF50070E13F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F470C28903DF50070E13F /* SceneDelegate.swift */; };
-		B83F471228903DF50070E13F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83F471028903DF50070E13F /* Main.storyboard */; };
 		B83F471428903DF70070E13F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83F471328903DF70070E13F /* Assets.xcassets */; };
-		B83F471728903DF70070E13F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83F471528903DF70070E13F /* LaunchScreen.storyboard */; };
 		B83F472228903DF70070E13F /* ValorantGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F472128903DF70070E13F /* ValorantGuideTests.swift */; };
 		B83F472C28903DF70070E13F /* ValorantGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F472B28903DF70070E13F /* ValorantGuideUITests.swift */; };
 		B83F472E28903DF70070E13F /* ValorantGuideUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F472D28903DF70070E13F /* ValorantGuideUITestsLaunchTests.swift */; };
 		B84405F728955E5C00609B95 /* AgentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84405F628955E5C00609B95 /* AgentsTableViewCell.swift */; };
 		B84405FA2895696D00609B95 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84405F92895696D00609B95 /* UIViewExtension.swift */; };
 		B84405FC2895F57E00609B95 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84405FB2895F57E00609B95 /* Colors.swift */; };
-		B8A63ECC2893E492006F9981 /* AgentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ECB2893E492006F9981 /* AgentsViewController.swift */; };
+		B84405FF2896B70C00609B95 /* AgentsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84405FE2896B70C00609B95 /* AgentsDetailViewController.swift */; };
+		B84406012896C7FB00609B95 /* AgentDetailViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84406002896C7FB00609B95 /* AgentDetailViewRouter.swift */; };
+		B84406032896C83500609B95 /* AgentsDetailViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84406022896C83500609B95 /* AgentsDetailViewProtocols.swift */; };
+		B84406052896C83F00609B95 /* AgentsDetailViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84406042896C83F00609B95 /* AgentsDetailViewPresenter.swift */; };
+		B84406072896C86600609B95 /* AgentsDetailViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84406062896C86600609B95 /* AgentsDetailViewInteractor.swift */; };
+		B8A63ECC2893E492006F9981 /* AgentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ECB2893E492006F9981 /* AgentsTableViewController.swift */; };
 		B8A63ECE2893E49F006F9981 /* AgentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ECD2893E49F006F9981 /* AgentsInteractor.swift */; };
 		B8A63ED02893E4AB006F9981 /* AgentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ECF2893E4AB006F9981 /* AgentsPresenter.swift */; };
 		B8A63ED22893E4B8006F9981 /* AgentsListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ED12893E4B8006F9981 /* AgentsListEntity.swift */; };
 		B8A63ED42893E4C9006F9981 /* AgentsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ED32893E4C9006F9981 /* AgentsRouter.swift */; };
-		B8A63ED62894A8AF006F9981 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ED52894A8AF006F9981 /* Protocols.swift */; };
+		B8A63ED62894A8AF006F9981 /* AgentsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ED52894A8AF006F9981 /* AgentsProtocols.swift */; };
 		B8A63ED92894A993006F9981 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ED82894A993006F9981 /* Constans.swift */; };
-		B8A63EDB2894A9A1006F9981 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63EDA2894A9A1006F9981 /* EndPoint.swift */; };
+		B8A63EDB2894A9A1006F9981 /* EntryPointAgents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63EDA2894A9A1006F9981 /* EntryPointAgents.swift */; };
 		DBC8CD50449F2CC42DB49BAF /* Pods_ValorantGuide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE3411C3D8F8D7193A5961F /* Pods_ValorantGuide.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,9 +56,7 @@
 		B83F470728903DF50070E13F /* ValorantGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValorantGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83F470A28903DF50070E13F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B83F470C28903DF50070E13F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B83F471128903DF50070E13F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B83F471328903DF70070E13F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B83F471628903DF70070E13F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B83F471828903DF70070E13F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B83F471D28903DF70070E13F /* ValorantGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValorantGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83F472128903DF70070E13F /* ValorantGuideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantGuideTests.swift; sourceTree = "<group>"; };
@@ -65,14 +66,19 @@
 		B84405F628955E5C00609B95 /* AgentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsTableViewCell.swift; sourceTree = "<group>"; };
 		B84405F92895696D00609B95 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		B84405FB2895F57E00609B95 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		B8A63ECB2893E492006F9981 /* AgentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsViewController.swift; sourceTree = "<group>"; };
+		B84405FE2896B70C00609B95 /* AgentsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsDetailViewController.swift; sourceTree = "<group>"; };
+		B84406002896C7FB00609B95 /* AgentDetailViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailViewRouter.swift; sourceTree = "<group>"; };
+		B84406022896C83500609B95 /* AgentsDetailViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsDetailViewProtocols.swift; sourceTree = "<group>"; };
+		B84406042896C83F00609B95 /* AgentsDetailViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsDetailViewPresenter.swift; sourceTree = "<group>"; };
+		B84406062896C86600609B95 /* AgentsDetailViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsDetailViewInteractor.swift; sourceTree = "<group>"; };
+		B8A63ECB2893E492006F9981 /* AgentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsTableViewController.swift; sourceTree = "<group>"; };
 		B8A63ECD2893E49F006F9981 /* AgentsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsInteractor.swift; sourceTree = "<group>"; };
 		B8A63ECF2893E4AB006F9981 /* AgentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsPresenter.swift; sourceTree = "<group>"; };
 		B8A63ED12893E4B8006F9981 /* AgentsListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsListEntity.swift; sourceTree = "<group>"; };
 		B8A63ED32893E4C9006F9981 /* AgentsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsRouter.swift; sourceTree = "<group>"; };
-		B8A63ED52894A8AF006F9981 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		B8A63ED52894A8AF006F9981 /* AgentsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsProtocols.swift; sourceTree = "<group>"; };
 		B8A63ED82894A993006F9981 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
-		B8A63EDA2894A9A1006F9981 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		B8A63EDA2894A9A1006F9981 /* EntryPointAgents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryPointAgents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,12 +149,12 @@
 		B83F470928903DF50070E13F /* ValorantGuide */ = {
 			isa = PBXGroup;
 			children = (
-				B8A63ECA2893E482006F9981 /* Viper */,
-				B83F470A28903DF50070E13F /* AppDelegate.swift */,
-				B83F470C28903DF50070E13F /* SceneDelegate.swift */,
-				B83F471028903DF50070E13F /* Main.storyboard */,
+				B844060D2898AF5C00609B95 /* Settings */,
+				B8A63ED72894A982006F9981 /* Common */,
+				B84405F82895695700609B95 /* Extensions */,
+				B84405FD2896B5FE00609B95 /* AgentsDetailView */,
+				B8A63ECA2893E482006F9981 /* AgentsTableView */,
 				B83F471328903DF70070E13F /* Assets.xcassets */,
-				B83F471528903DF70070E13F /* LaunchScreen.storyboard */,
 				B83F471828903DF70070E13F /* Info.plist */,
 			);
 			path = ValorantGuide;
@@ -187,27 +193,46 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		B8A63ECA2893E482006F9981 /* Viper */ = {
+		B84405FD2896B5FE00609B95 /* AgentsDetailView */ = {
 			isa = PBXGroup;
 			children = (
-				B84405F82895695700609B95 /* Extensions */,
+				B84405FE2896B70C00609B95 /* AgentsDetailViewController.swift */,
+				B84406002896C7FB00609B95 /* AgentDetailViewRouter.swift */,
+				B84406022896C83500609B95 /* AgentsDetailViewProtocols.swift */,
+				B84406042896C83F00609B95 /* AgentsDetailViewPresenter.swift */,
+				B84406062896C86600609B95 /* AgentsDetailViewInteractor.swift */,
+			);
+			path = AgentsDetailView;
+			sourceTree = "<group>";
+		};
+		B844060D2898AF5C00609B95 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B83F470C28903DF50070E13F /* SceneDelegate.swift */,
+				B83F470A28903DF50070E13F /* AppDelegate.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		B8A63ECA2893E482006F9981 /* AgentsTableView */ = {
+			isa = PBXGroup;
+			children = (
 				B84405F528955E5000609B95 /* Cell */,
-				B8A63ECB2893E492006F9981 /* AgentsViewController.swift */,
+				B8A63ECB2893E492006F9981 /* AgentsTableViewController.swift */,
 				B8A63ECD2893E49F006F9981 /* AgentsInteractor.swift */,
 				B8A63ECF2893E4AB006F9981 /* AgentsPresenter.swift */,
 				B8A63ED12893E4B8006F9981 /* AgentsListEntity.swift */,
 				B8A63ED32893E4C9006F9981 /* AgentsRouter.swift */,
-				B8A63ED52894A8AF006F9981 /* Protocols.swift */,
-				B8A63ED72894A982006F9981 /* Common */,
+				B8A63ED52894A8AF006F9981 /* AgentsProtocols.swift */,
 			);
-			path = Viper;
+			path = AgentsTableView;
 			sourceTree = "<group>";
 		};
 		B8A63ED72894A982006F9981 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				B8A63ED82894A993006F9981 /* Constans.swift */,
-				B8A63EDA2894A9A1006F9981 /* EndPoint.swift */,
+				B8A63EDA2894A9A1006F9981 /* EntryPointAgents.swift */,
 				B84405FB2895F57E00609B95 /* Colors.swift */,
 			);
 			path = Common;
@@ -319,9 +344,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B83F471728903DF70070E13F /* LaunchScreen.storyboard in Resources */,
 				B83F471428903DF70070E13F /* Assets.xcassets in Resources */,
-				B83F471228903DF50070E13F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,17 +413,22 @@
 			files = (
 				B83F470B28903DF50070E13F /* AppDelegate.swift in Sources */,
 				B83F470D28903DF50070E13F /* SceneDelegate.swift in Sources */,
-				B8A63EDB2894A9A1006F9981 /* EndPoint.swift in Sources */,
+				B8A63EDB2894A9A1006F9981 /* EntryPointAgents.swift in Sources */,
 				B8A63ED92894A993006F9981 /* Constans.swift in Sources */,
 				B8A63ED22893E4B8006F9981 /* AgentsListEntity.swift in Sources */,
 				B8A63ED42893E4C9006F9981 /* AgentsRouter.swift in Sources */,
+				B84405FF2896B70C00609B95 /* AgentsDetailViewController.swift in Sources */,
 				B84405FA2895696D00609B95 /* UIViewExtension.swift in Sources */,
+				B84406052896C83F00609B95 /* AgentsDetailViewPresenter.swift in Sources */,
 				B8A63ECE2893E49F006F9981 /* AgentsInteractor.swift in Sources */,
+				B84406012896C7FB00609B95 /* AgentDetailViewRouter.swift in Sources */,
 				B84405FC2895F57E00609B95 /* Colors.swift in Sources */,
-				B8A63ECC2893E492006F9981 /* AgentsViewController.swift in Sources */,
+				B84406032896C83500609B95 /* AgentsDetailViewProtocols.swift in Sources */,
+				B8A63ECC2893E492006F9981 /* AgentsTableViewController.swift in Sources */,
 				B84405F728955E5C00609B95 /* AgentsTableViewCell.swift in Sources */,
 				B8A63ED02893E4AB006F9981 /* AgentsPresenter.swift in Sources */,
-				B8A63ED62894A8AF006F9981 /* Protocols.swift in Sources */,
+				B84406072896C86600609B95 /* AgentsDetailViewInteractor.swift in Sources */,
+				B8A63ED62894A8AF006F9981 /* AgentsProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,25 +463,6 @@
 			targetProxy = B83F472828903DF70070E13F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B83F471028903DF50070E13F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B83F471128903DF50070E13F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B83F471528903DF70070E13F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B83F471628903DF70070E13F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B83F472F28903DF70070E13F /* Debug */ = {
@@ -583,7 +592,6 @@
 				INFOPLIST_FILE = ValorantGuide/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -612,7 +620,6 @@
 				INFOPLIST_FILE = ValorantGuide/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -1,10 +1,3 @@
-//
-//  Cell.swift
-//  ValorantGuide
-//
-//  Created by Mateusz Gozdzik on 30/07/2022.
-//
-
 import Foundation
 import UIKit
 import SnapKit
@@ -14,7 +7,6 @@ class AgentsTableViewCell: UITableViewCell {
     var gradientLayer: CAGradientLayer = CAGradientLayer()
     
     required init?(coder aDecoder: NSCoder) {
-        
         super.init(coder: aDecoder)
     }
     

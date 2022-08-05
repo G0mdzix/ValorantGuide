@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class AgentsViewController: UIViewController, AgentView, UITableViewDelegate, UITableViewDataSource{
+class AgentsTableViewController: UIViewController, AgentView, UITableViewDelegate, UITableViewDataSource{
   
     var presenter: AgentPresenter?
     var agents: [Agent] = []
@@ -43,7 +43,7 @@ class AgentsViewController: UIViewController, AgentView, UITableViewDelegate, UI
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 220.0
+        return 220
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -52,6 +52,13 @@ class AgentsViewController: UIViewController, AgentView, UITableViewDelegate, UI
         cell.agentTitleDetailedLabel.text = agents[indexPath.row].developerName
         cell.agentDescritpionLabel.text = agents[indexPath.row].description
         cell.agentIconImageView.loadFrom(URLAddress: agents[indexPath.row].displayIconSmall)
+       // cell.agentNameLabel.text = agents[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let navigationController = navigationController {
+            presenter?.showAgentsDetailController(with: agents[indexPath.row], navigationController: navigationController)
+        }
     }
 }

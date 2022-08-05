@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 protocol AgentView {
     var presenter: AgentPresenter? {get set}
@@ -12,8 +13,9 @@ protocol AgentInteractor {
 }
 
 protocol AgentRouter {
-    var entry:  EntryPoint? {get}
+    var entry:  EntryPointAgents? {get}
     static func start() -> AgentRouter
+    func pushToAgentsDetailView(with agent: Agent, navigationConroller:UINavigationController)
 }
 
 protocol AgentPresenter{
@@ -21,4 +23,5 @@ protocol AgentPresenter{
     var interactor: AgentInteractor? {get set}
     var view: AgentView? {get set}
     func interactprDidFetchUsers(with result: Result<[Agent], Error>)
+    func showAgentsDetailController(with agent: Agent, navigationController:UINavigationController)
 }
