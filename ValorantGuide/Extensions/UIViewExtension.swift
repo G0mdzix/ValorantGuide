@@ -1,36 +1,23 @@
-//
-//  UIViewExtension.swift
-//  ValorantGuide
-//
-//  Created by Mateusz Gozdzik on 30/07/2022.
-//
-
 import UIKit
 
-extension UIImageView {
-    func loadFrom(URLAddress: String) {
-        guard let url = URL(string: URLAddress) else {
-            return
-        }
-        
-        DispatchQueue.main.async { [weak self] in
-            if let imageData = try? Data(contentsOf: url) {
-                if let loadedImage = UIImage(data: imageData) {
-                        self?.image = loadedImage
-                }
-            }
-        }
-    }
+extension UIView {
+  func setGradientBackground(colorOne: UIColor, colorTwo: UIColor) {
+    let gradientLayer = CAGradientLayer()
+    gradientLayer.frame = bounds
+    gradientLayer.colors = [colorOne.cgColor, colorTwo.cgColor]
+    gradientLayer.locations = [0.0, 4.0]
+    layer.insertSublayer(gradientLayer, at: 0)
+  }
 }
 
 extension UIView {
-    func setGradientBackground(colorOne: UIColor, colorTwo: UIColor) {
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = bounds
-        gradientLayer.colors = [colorOne.cgColor, colorTwo.cgColor]
-        gradientLayer.locations = [0.0, 4.0]
-        layer.insertSublayer(gradientLayer, at: 0)
+  func setGradientBackground(colorTop: UIColor, colorBottom: UIColor) {
+    let gradientLayer = CAGradientLayer()
+    gradientLayer.colors = [colorBottom.cgColor, colorTop.cgColor]
+    gradientLayer.startPoint = CGPoint(x: 0.5, y: 1.0)
+    gradientLayer.endPoint = CGPoint(x: 0.5, y: 0.0)
+    gradientLayer.locations = [0, 1]
+    gradientLayer.frame = bounds
+    layer.insertSublayer(gradientLayer, at: 0)
     }
 }
-
-

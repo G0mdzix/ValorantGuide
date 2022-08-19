@@ -20,7 +20,25 @@
 		B84406012896C7FB00609B95 /* AgentDetailViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84406002896C7FB00609B95 /* AgentDetailViewRouter.swift */; };
 		B84406032896C83500609B95 /* AgentsDetailViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84406022896C83500609B95 /* AgentsDetailViewProtocols.swift */; };
 		B84406052896C83F00609B95 /* AgentsDetailViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84406042896C83F00609B95 /* AgentsDetailViewPresenter.swift */; };
-		B84406072896C86600609B95 /* AgentsDetailViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84406062896C86600609B95 /* AgentsDetailViewInteractor.swift */; };
+		B844060F289E0F4F00609B95 /* UILabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B844060E289E0F4F00609B95 /* UILabels.swift */; };
+		B844061128A0911D00609B95 /* Containers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B844061028A0911D00609B95 /* Containers.swift */; };
+		B844061328A0916A00609B95 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B844061228A0916A00609B95 /* UIImage.swift */; };
+		B844061528A09D2000609B95 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B844061428A09D2000609B95 /* UIImageViewExtension.swift */; };
+		B844061828A0A1BA00609B95 /* LoadingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B844061728A0A1BA00609B95 /* LoadingScreenView.swift */; };
+		B844061A28A1CB2900609B95 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B844061928A1CB2900609B95 /* Animation.swift */; };
+		B88C5A0E28A3BD2F00D461AC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88C5A0D28A3BD2F00D461AC /* MainViewController.swift */; };
+		B88C5A1028A3C23100D461AC /* MainViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88C5A0F28A3C23100D461AC /* MainViewTableViewCell.swift */; };
+		B88C5A1328A3CEFA00D461AC /* HeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88C5A1228A3CEFA00D461AC /* HeaderUIView.swift */; };
+		B88C5A1528A3E57300D461AC /* MainViewEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88C5A1428A3E57300D461AC /* MainViewEntity.swift */; };
+		B88C5A1728A3F92C00D461AC /* TitleCollectionMainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88C5A1628A3F92C00D461AC /* TitleCollectionMainViewCell.swift */; };
+		B88C5A1928A4025600D461AC /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88C5A1828A4025600D461AC /* Common.swift */; };
+		B88C5A1C28A404C200D461AC /* MainViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88C5A1B28A404C200D461AC /* MainViewProtocols.swift */; };
+		B88C5A1E28A404D500D461AC /* MainViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88C5A1D28A404D500D461AC /* MainViewRouter.swift */; };
+		B88C5A2028A404EB00D461AC /* MainViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88C5A1F28A404EB00D461AC /* MainViewInteractor.swift */; };
+		B88C5A2228A409D400D461AC /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88C5A2128A409D400D461AC /* MainViewPresenter.swift */; };
+		B88C5A2428AC06EF00D461AC /* LoadingScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88C5A2328AC06EF00D461AC /* LoadingScreenRouter.swift */; };
+		B88C5A2628AC070200D461AC /* LoadingScrenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88C5A2528AC070200D461AC /* LoadingScrenProtocols.swift */; };
+		B88C5A2828AC071700D461AC /* LoadingScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88C5A2728AC071700D461AC /* LoadingScreenPresenter.swift */; };
 		B8A63ECC2893E492006F9981 /* AgentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ECB2893E492006F9981 /* AgentsTableViewController.swift */; };
 		B8A63ECE2893E49F006F9981 /* AgentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ECD2893E49F006F9981 /* AgentsInteractor.swift */; };
 		B8A63ED02893E4AB006F9981 /* AgentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ECF2893E4AB006F9981 /* AgentsPresenter.swift */; };
@@ -28,7 +46,7 @@
 		B8A63ED42893E4C9006F9981 /* AgentsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ED32893E4C9006F9981 /* AgentsRouter.swift */; };
 		B8A63ED62894A8AF006F9981 /* AgentsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ED52894A8AF006F9981 /* AgentsProtocols.swift */; };
 		B8A63ED92894A993006F9981 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ED82894A993006F9981 /* Constans.swift */; };
-		B8A63EDB2894A9A1006F9981 /* EntryPointAgents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63EDA2894A9A1006F9981 /* EntryPointAgents.swift */; };
+		B8A63EDB2894A9A1006F9981 /* EntryPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63EDA2894A9A1006F9981 /* EntryPoint.swift */; };
 		DBC8CD50449F2CC42DB49BAF /* Pods_ValorantGuide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE3411C3D8F8D7193A5961F /* Pods_ValorantGuide.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,7 +88,25 @@
 		B84406002896C7FB00609B95 /* AgentDetailViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailViewRouter.swift; sourceTree = "<group>"; };
 		B84406022896C83500609B95 /* AgentsDetailViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsDetailViewProtocols.swift; sourceTree = "<group>"; };
 		B84406042896C83F00609B95 /* AgentsDetailViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsDetailViewPresenter.swift; sourceTree = "<group>"; };
-		B84406062896C86600609B95 /* AgentsDetailViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsDetailViewInteractor.swift; sourceTree = "<group>"; };
+		B844060E289E0F4F00609B95 /* UILabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabels.swift; sourceTree = "<group>"; };
+		B844061028A0911D00609B95 /* Containers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Containers.swift; sourceTree = "<group>"; };
+		B844061228A0916A00609B95 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		B844061428A09D2000609B95 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		B844061728A0A1BA00609B95 /* LoadingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreenView.swift; sourceTree = "<group>"; };
+		B844061928A1CB2900609B95 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		B88C5A0D28A3BD2F00D461AC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B88C5A0F28A3C23100D461AC /* MainViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewTableViewCell.swift; sourceTree = "<group>"; };
+		B88C5A1228A3CEFA00D461AC /* HeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderUIView.swift; sourceTree = "<group>"; };
+		B88C5A1428A3E57300D461AC /* MainViewEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewEntity.swift; sourceTree = "<group>"; };
+		B88C5A1628A3F92C00D461AC /* TitleCollectionMainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionMainViewCell.swift; sourceTree = "<group>"; };
+		B88C5A1828A4025600D461AC /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		B88C5A1B28A404C200D461AC /* MainViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewProtocols.swift; sourceTree = "<group>"; };
+		B88C5A1D28A404D500D461AC /* MainViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewRouter.swift; sourceTree = "<group>"; };
+		B88C5A1F28A404EB00D461AC /* MainViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewInteractor.swift; sourceTree = "<group>"; };
+		B88C5A2128A409D400D461AC /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
+		B88C5A2328AC06EF00D461AC /* LoadingScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreenRouter.swift; sourceTree = "<group>"; };
+		B88C5A2528AC070200D461AC /* LoadingScrenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScrenProtocols.swift; sourceTree = "<group>"; };
+		B88C5A2728AC071700D461AC /* LoadingScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreenPresenter.swift; sourceTree = "<group>"; };
 		B8A63ECB2893E492006F9981 /* AgentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsTableViewController.swift; sourceTree = "<group>"; };
 		B8A63ECD2893E49F006F9981 /* AgentsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsInteractor.swift; sourceTree = "<group>"; };
 		B8A63ECF2893E4AB006F9981 /* AgentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsPresenter.swift; sourceTree = "<group>"; };
@@ -78,7 +114,7 @@
 		B8A63ED32893E4C9006F9981 /* AgentsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsRouter.swift; sourceTree = "<group>"; };
 		B8A63ED52894A8AF006F9981 /* AgentsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsProtocols.swift; sourceTree = "<group>"; };
 		B8A63ED82894A993006F9981 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
-		B8A63EDA2894A9A1006F9981 /* EntryPointAgents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryPointAgents.swift; sourceTree = "<group>"; };
+		B8A63EDA2894A9A1006F9981 /* EntryPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +188,8 @@
 				B844060D2898AF5C00609B95 /* Settings */,
 				B8A63ED72894A982006F9981 /* Common */,
 				B84405F82895695700609B95 /* Extensions */,
+				B844061B28A3BCBA00609B95 /* MainView */,
+				B844061628A0A17A00609B95 /* LoadingScreen */,
 				B84405FD2896B5FE00609B95 /* AgentsDetailView */,
 				B8A63ECA2893E482006F9981 /* AgentsTableView */,
 				B83F471328903DF70070E13F /* Assets.xcassets */,
@@ -177,18 +215,20 @@
 			path = ValorantGuideUITests;
 			sourceTree = "<group>";
 		};
-		B84405F528955E5000609B95 /* Cell */ = {
+		B84405F528955E5000609B95 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B8A63ECB2893E492006F9981 /* AgentsTableViewController.swift */,
 				B84405F628955E5C00609B95 /* AgentsTableViewCell.swift */,
 			);
-			path = Cell;
+			path = View;
 			sourceTree = "<group>";
 		};
 		B84405F82895695700609B95 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				B84405F92895696D00609B95 /* UIViewExtension.swift */,
+				B844061428A09D2000609B95 /* UIImageViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -200,7 +240,6 @@
 				B84406002896C7FB00609B95 /* AgentDetailViewRouter.swift */,
 				B84406022896C83500609B95 /* AgentsDetailViewProtocols.swift */,
 				B84406042896C83F00609B95 /* AgentsDetailViewPresenter.swift */,
-				B84406062896C86600609B95 /* AgentsDetailViewInteractor.swift */,
 			);
 			path = AgentsDetailView;
 			sourceTree = "<group>";
@@ -214,11 +253,58 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		B844061628A0A17A00609B95 /* LoadingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B844061728A0A1BA00609B95 /* LoadingScreenView.swift */,
+				B844061928A1CB2900609B95 /* Animation.swift */,
+				B88C5A2328AC06EF00D461AC /* LoadingScreenRouter.swift */,
+				B88C5A2528AC070200D461AC /* LoadingScrenProtocols.swift */,
+				B88C5A2728AC071700D461AC /* LoadingScreenPresenter.swift */,
+			);
+			path = LoadingScreen;
+			sourceTree = "<group>";
+		};
+		B844061B28A3BCBA00609B95 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				B88C5A1A28A4044D00D461AC /* View */,
+				B88C5A1428A3E57300D461AC /* MainViewEntity.swift */,
+				B88C5A2128A409D400D461AC /* MainViewPresenter.swift */,
+				B88C5A1828A4025600D461AC /* Common.swift */,
+				B88C5A1B28A404C200D461AC /* MainViewProtocols.swift */,
+				B88C5A1D28A404D500D461AC /* MainViewRouter.swift */,
+				B88C5A1F28A404EB00D461AC /* MainViewInteractor.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		B88C5A1128A3CEA400D461AC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B84405FB2895F57E00609B95 /* Colors.swift */,
+				B844061228A0916A00609B95 /* UIImage.swift */,
+				B844061028A0911D00609B95 /* Containers.swift */,
+				B844060E289E0F4F00609B95 /* UILabels.swift */,
+				B88C5A1228A3CEFA00D461AC /* HeaderUIView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B88C5A1A28A4044D00D461AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B88C5A0F28A3C23100D461AC /* MainViewTableViewCell.swift */,
+				B88C5A0D28A3BD2F00D461AC /* MainViewController.swift */,
+				B88C5A1628A3F92C00D461AC /* TitleCollectionMainViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B8A63ECA2893E482006F9981 /* AgentsTableView */ = {
 			isa = PBXGroup;
 			children = (
-				B84405F528955E5000609B95 /* Cell */,
-				B8A63ECB2893E492006F9981 /* AgentsTableViewController.swift */,
+				B84405F528955E5000609B95 /* View */,
 				B8A63ECD2893E49F006F9981 /* AgentsInteractor.swift */,
 				B8A63ECF2893E4AB006F9981 /* AgentsPresenter.swift */,
 				B8A63ED12893E4B8006F9981 /* AgentsListEntity.swift */,
@@ -232,8 +318,8 @@
 			isa = PBXGroup;
 			children = (
 				B8A63ED82894A993006F9981 /* Constans.swift */,
-				B8A63EDA2894A9A1006F9981 /* EntryPointAgents.swift */,
-				B84405FB2895F57E00609B95 /* Colors.swift */,
+				B8A63EDA2894A9A1006F9981 /* EntryPoint.swift */,
+				B88C5A1128A3CEA400D461AC /* UI */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -245,6 +331,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B83F473128903DF70070E13F /* Build configuration list for PBXNativeTarget "ValorantGuide" */;
 			buildPhases = (
+				B88C5A2928AD2E3B00D461AC /* Run SwiftLint */,
 				831FC568D3021B17FE4A51E3 /* [CP] Check Pods Manifest.lock */,
 				B83F470328903DF50070E13F /* Sources */,
 				B83F470428903DF50070E13F /* Frameworks */,
@@ -404,6 +491,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ValorantGuide/Pods-ValorantGuide-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B88C5A2928AD2E3B00D461AC /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -411,23 +516,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B844061328A0916A00609B95 /* UIImage.swift in Sources */,
 				B83F470B28903DF50070E13F /* AppDelegate.swift in Sources */,
 				B83F470D28903DF50070E13F /* SceneDelegate.swift in Sources */,
-				B8A63EDB2894A9A1006F9981 /* EntryPointAgents.swift in Sources */,
+				B8A63EDB2894A9A1006F9981 /* EntryPoint.swift in Sources */,
 				B8A63ED92894A993006F9981 /* Constans.swift in Sources */,
 				B8A63ED22893E4B8006F9981 /* AgentsListEntity.swift in Sources */,
+				B844061528A09D2000609B95 /* UIImageViewExtension.swift in Sources */,
+				B88C5A2028A404EB00D461AC /* MainViewInteractor.swift in Sources */,
+				B844061128A0911D00609B95 /* Containers.swift in Sources */,
+				B844060F289E0F4F00609B95 /* UILabels.swift in Sources */,
 				B8A63ED42893E4C9006F9981 /* AgentsRouter.swift in Sources */,
 				B84405FF2896B70C00609B95 /* AgentsDetailViewController.swift in Sources */,
 				B84405FA2895696D00609B95 /* UIViewExtension.swift in Sources */,
 				B84406052896C83F00609B95 /* AgentsDetailViewPresenter.swift in Sources */,
+				B88C5A2228A409D400D461AC /* MainViewPresenter.swift in Sources */,
+				B88C5A0E28A3BD2F00D461AC /* MainViewController.swift in Sources */,
+				B844061A28A1CB2900609B95 /* Animation.swift in Sources */,
 				B8A63ECE2893E49F006F9981 /* AgentsInteractor.swift in Sources */,
+				B88C5A2828AC071700D461AC /* LoadingScreenPresenter.swift in Sources */,
+				B88C5A1E28A404D500D461AC /* MainViewRouter.swift in Sources */,
+				B844061828A0A1BA00609B95 /* LoadingScreenView.swift in Sources */,
+				B88C5A1728A3F92C00D461AC /* TitleCollectionMainViewCell.swift in Sources */,
 				B84406012896C7FB00609B95 /* AgentDetailViewRouter.swift in Sources */,
 				B84405FC2895F57E00609B95 /* Colors.swift in Sources */,
 				B84406032896C83500609B95 /* AgentsDetailViewProtocols.swift in Sources */,
+				B88C5A1528A3E57300D461AC /* MainViewEntity.swift in Sources */,
 				B8A63ECC2893E492006F9981 /* AgentsTableViewController.swift in Sources */,
+				B88C5A1328A3CEFA00D461AC /* HeaderUIView.swift in Sources */,
 				B84405F728955E5C00609B95 /* AgentsTableViewCell.swift in Sources */,
+				B88C5A2628AC070200D461AC /* LoadingScrenProtocols.swift in Sources */,
 				B8A63ED02893E4AB006F9981 /* AgentsPresenter.swift in Sources */,
-				B84406072896C86600609B95 /* AgentsDetailViewInteractor.swift in Sources */,
+				B88C5A1028A3C23100D461AC /* MainViewTableViewCell.swift in Sources */,
+				B88C5A2428AC06EF00D461AC /* LoadingScreenRouter.swift in Sources */,
+				B88C5A1928A4025600D461AC /* Common.swift in Sources */,
+				B88C5A1C28A404C200D461AC /* MainViewProtocols.swift in Sources */,
 				B8A63ED62894A8AF006F9981 /* AgentsProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
