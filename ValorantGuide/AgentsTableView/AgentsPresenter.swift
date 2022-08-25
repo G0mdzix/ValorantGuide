@@ -6,7 +6,7 @@ enum FetchError: Error {
 }
 
 class AgentsPresenter: AgentPresenter {
-
+  
   var router: AgentRouter?
   var view: AgentView?
   var interactor: AgentInteractor? {
@@ -15,7 +15,7 @@ class AgentsPresenter: AgentPresenter {
     }
   }
 
-  func interactprDidFetchUsers(with result: Result<[Agent], Error>) {
+  func interactprDidFetchAgents(with result: Result<[Agent], Error>) {
     switch result {
     case .success(let agent):
       view?.update(with: agent)
@@ -23,7 +23,7 @@ class AgentsPresenter: AgentPresenter {
       view?.update(with: "Something went wrong")
     }
   }
-  
+
   func showAgentsDetailController(with agent: Agent, navigationController: UINavigationController) {
     router?.pushToAgentsDetailView(with: agent, navigationConroller: navigationController)
     }

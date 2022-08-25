@@ -25,7 +25,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
   }
 
     func update(with error: String) {
-        print(error)
+      print(error)
     }
     
     func update(with titles: [Titles]) {

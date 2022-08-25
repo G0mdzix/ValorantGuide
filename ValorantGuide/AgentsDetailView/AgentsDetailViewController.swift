@@ -4,17 +4,17 @@ import SnapKit
 
 class AgentsDetailViewController: UIViewController, AgentsDetailView {
 
-    let skillLabel = AgentsNameLabel()
-    let agentNameLabel = AgentsNameLabel()
-    let containerIconBackground = ContainerBackground()
-    let containerSkillBackgroundView = ContainerAbilities()
-    let containerFirstAbilityView = ContainerAbilities()
-    let containerSecondAbilityView = ContainerAbilities()
-    let containerThirdAbilityView = ContainerAbilities()
-    let containerUltAbilityView = ContainerAbilities()
-    let agentIconImageView = IconImage()
-    var presenter: AgentsDetailPresenter?
-    var agent: Agent?
+  let skillLabel = AgentsNameLabel()
+  let agentNameLabel = AgentsNameLabel()
+  let containerIconBackground = ContainerBackground()
+  let containerSkillBackgroundView = ContainerAbilities()
+  let containerFirstAbilityView = ContainerAbilities()
+  let containerSecondAbilityView = ContainerAbilities()
+  let containerThirdAbilityView = ContainerAbilities()
+  let containerUltAbilityView = ContainerAbilities()
+  let agentIconImageView = IconImage()
+  var presenter: AgentsDetailPresenter?
+  var agent: Agent?
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
