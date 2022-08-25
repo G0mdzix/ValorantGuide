@@ -1,10 +1,10 @@
 import Foundation
 
-struct AgentsListEntity: Codable {
+struct AgentsListEntity: Codable, Hashable {
   var data: [Agent]
 }
 
-struct Agent: Codable {
+struct Agent: Codable, Hashable {
   let displayName: String
   let developerName: String
   let description: String
@@ -13,12 +13,12 @@ struct Agent: Codable {
   let abilities: [AgentAbilities]
   }
 
-struct AgentAbilities: Codable {
+struct AgentAbilities: Codable, Hashable {
   let displayIcon: String?
   let displayName: String
   let description: String
 }
 
-struct AgentRole: Codable {
+struct AgentRole: Codable, Hashable {
   let displayName: String
 }

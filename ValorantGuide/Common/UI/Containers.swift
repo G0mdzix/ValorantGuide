@@ -9,8 +9,8 @@ class ContainerBackground: UIView {
     }
 
   required init?(coder aDecoder: NSCoder) {
-      super.init(coder: aDecoder)
-      initializeContainer()
+    super.init(coder: aDecoder)
+    initializeContainer()
   }
 
   override init(frame: CGRect) {
@@ -68,6 +68,47 @@ class ContainerAbilities: UIView {
       make.centerX.equalToSuperview()
       make.topMargin.equalToSuperview().offset(5)
       make.size.equalTo(75)
+    }
+  }
+}
+
+class DrawAgentsContainer: UIView {
+
+  let agentNameLabel = SkillNameLabel()
+  let agentIconImage = IconImage()
+
+  override func layoutSubviews() { super.layoutSubviews() }
+    required init?(coder aDecoder: NSCoder) {
+      super.init(coder: aDecoder)
+      initializeContainer()
+      sharedLayout()
+    }
+
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    initializeContainer()
+    sharedLayout()
+    }
+
+  func initializeContainer() {
+    self.translatesAutoresizingMaskIntoConstraints = false
+    self.clipsToBounds = true
+    self.layer.cornerRadius = 45
+    }
+
+  private func sharedLayout() {
+    self.addSubview(agentIconImage)
+    self.addSubview(agentNameLabel)
+
+    agentNameLabel.snp.makeConstraints { make in
+      make.centerY.trailing.equalToSuperview()
+      make.leftMargin.equalTo(agentIconImage.snp_rightMargin).offset(30)
+    }
+
+    agentIconImage.snp.makeConstraints { make in
+      make.centerY.leading.equalToSuperview()
+      make.leading.equalToSuperview().offset(40) 
+      make.size.equalTo(215)
     }
   }
 }
