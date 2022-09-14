@@ -13,20 +13,20 @@ class MainViewInteractor: MainInteractor {
   }
 
   func getTitles() -> [Titles] {
-    var titlesList = [Titles]()
+    var titlesList: [Titles] = []
     let allTitles = Common.generateDataTitlesList()
-    for item in allTitles {
-      titlesList.append(Titles(attributes: item))
-    }
+      allTitles.map { element in
+      titlesList.append(Titles(attributes: element))
+      }
     return titlesList
   }
   
   func getSelectionTitles() -> [SelectionTitles] {
-    var selectionTitlesList = [SelectionTitles]()
+    var selectionTitlesList: [SelectionTitles] = []
     let allSelectionTitles = Common.generateDataSelecitonTitlesList()
-    for item in allSelectionTitles {
-      selectionTitlesList.append(SelectionTitles(attributes: item))
-    }
+      allSelectionTitles.map { element in
+      selectionTitlesList.append(SelectionTitles(attributes: element))
+      }
     return selectionTitlesList
   }
 }

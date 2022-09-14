@@ -19,9 +19,9 @@ class AgentsRouter: AgentRouter {
     return router
   }
   
-  func pushToAgentsDetailView(with agent: Agent, navigationConroller: UINavigationController) {
+  func pushToAgentsDetailView(with agentsViewModel: AgentsViewModel, navigationConroller: UINavigationController) {
     let agentsDetailModue = AgentsDetailViewController()
     navigationConroller.pushViewController(agentsDetailModue, animated: true)
-    AgentsDetailViewRouter.start(detailRef: agentsDetailModue, agent: agent)
+    AgentsDetailViewRouter.start(detailRef: agentsDetailModue, agentsViewModel: agentsViewModel)
   }
 }

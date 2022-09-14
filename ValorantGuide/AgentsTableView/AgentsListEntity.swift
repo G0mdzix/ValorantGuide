@@ -9,9 +9,9 @@ struct Agent: Codable, Hashable {
   let developerName: String
   let description: String
   let displayIconSmall: String
-  let role: AgentRole?
+  let role: AgentRole? // Musi tak byc poniewaz jeden z agentow w api nie ma roli !!!!!!!!!!!!!!!!!!!!!!!
   let abilities: [AgentAbilities]
-  }
+}
 
 struct AgentAbilities: Codable, Hashable {
   let displayIcon: String?

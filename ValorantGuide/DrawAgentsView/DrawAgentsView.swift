@@ -4,6 +4,7 @@ import SnapKit
 
 class DrawAgentsView: UIViewController, ViewProtocol {
 
+  
   var presenter: PresenterProtocol?
   var numberOfDrewdAgents: Int = 0
   let mainLabel = DescriptionLabel()
@@ -18,7 +19,7 @@ class DrawAgentsView: UIViewController, ViewProtocol {
     let slider = UISlider(frame: CGRect(x: 10, y: 100, width: 300, height: 20))
       slider.minimumValue = 0
       slider.maximumValue = 5
-      slider.value = 24
+      slider.value = 0
       slider.tintColor = Colors.dark
       slider.isContinuous = true
       slider.translatesAutoresizingMaskIntoConstraints = true
@@ -54,7 +55,7 @@ class DrawAgentsView: UIViewController, ViewProtocol {
     loadAnimationOfMainContainerBasedOnNumberOfAgentes()
   }
 
-  @objc func sliderValueDidChange(_ sender: UISlider!) {
+  @objc func sliderValueDidChange(_ sender: UISlider) {
     mainLabel.text = "Liczba wybranych agentów: " + String(Int(sender.value))
     presenter?.getNumberOfAgents(number: Int(sender.value))
     numberOfDrewdAgents = Int(sender.value) 
@@ -101,11 +102,12 @@ class DrawAgentsView: UIViewController, ViewProtocol {
 
   func loadAnimationOfMainContainerBasedOnNumberOfAgentes() {
     switch numberOfDrewdAgents {
+    case 0:
+      loadContainers()
+      animationOfMainContainer(offset: 0)
     case 1:
-      setupEachOfDrawAgentsContainers(name: firstAgentContainer, offset: 35)
       animationOfMainContainer(offset: -210)
     case 2:
-      setupEachOfDrawAgentsContainers(name: secondAgentContainer, offset: 145)
       animationOfMainContainer(offset: -105)
     case 3:
       animationOfMainContainer(offset: 10)

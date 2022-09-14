@@ -4,12 +4,12 @@ import UIKit
 class AgentsTableViewController: UIViewController, AgentView, UITableViewDelegate, UITableViewDataSource {
   
   var presenter: AgentPresenter?
-  var agents: [Agent] = []
+  let heightForRow: CGFloat = 220
 
   private let tableView: UITableView = {
     let table = UITableView()
     table.register(AgentsTableViewCell.self, forCellReuseIdentifier: K.agentsTableViewCell)
-    table.isHidden = true
+    table.isHidden = false
     return table
   }()
 
@@ -19,30 +19,24 @@ class AgentsTableViewController: UIViewController, AgentView, UITableViewDelegat
     tableView.backgroundColor = Colors.red
     tableView.delegate = self
     tableView.dataSource = self
+    self.tableView.reloadData()
   }
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
     tableView.frame = view.bounds
   }
 
-  func update(with agents: [Agent]) {
-    DispatchQueue.main.sync {
-      self.agents = agents
-      self.tableView.reloadData()
-      self.tableView.isHidden = false
-    }
-  }
-
   func update(with error: String) {
-    print(error)
+    self.tableView.isHidden = true
   }
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return agents.count
+    guard let presenter = presenter else { return 0 }
+    return presenter.numberOfAgentItems()
   }
 
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return 220
+    return heightForRow
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -53,16 +47,21 @@ class AgentsTableViewController: UIViewController, AgentView, UITableViewDelegat
       as? AgentsTableViewCell else {
       return UITableViewCell()
     }
-    cell.agentNameLabel.text = agents[indexPath.row].displayName
-    cell.agentTitleDetailedLabel.text = agents[indexPath.row].role?.displayName
-    cell.agentDescritpionLabel.text = agents[indexPath.row].description
-    cell.agentIconImageView.loadFrom(URLAddress: agents[indexPath.row].displayIconSmall)
+    guard let presenter = presenter else { return UITableViewCell() }
+    cell.agentNameLabel.text = presenter.agentItem(at: indexPath.row).name
+    cell.agentTitleDetailedLabel.text = presenter.agentItem(at: indexPath.row).roleName
+    cell.agentDescritpionLabel.text = presenter.agentItem(at: indexPath.row).description
+    cell.agentIconImageView.loadFrom(URLAddress: presenter.agentItem(at: indexPath.row).icon)
     return cell
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    guard let presenter = presenter else { return }
     if let navigationController = navigationController {
-      presenter?.showAgentsDetailController(with: agents[indexPath.row], navigationController: navigationController)
+      presenter.showAgentsDetailController(
+        with: presenter.agentItem(at: indexPath.row),
+        navigationController: navigationController
+      )
     }
   }
 }

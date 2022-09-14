@@ -5,7 +5,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                           MainView, MainTableViewCellDelegate {
     
     var presenter: MainPresenter?
-    var titles: [Titles] = []
     var sectionTitles: [SelectionTitles] = []
   
     private let mainFeedTable: UITableView = {
@@ -16,6 +15,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.mainFeedTable.reloadData()
     loadHeader()
   }
 
@@ -23,15 +23,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     super.viewDidLayoutSubviews()
     mainFeedTable.frame = view.bounds
   }
-
-    func update(with error: String) {
-      print(error)
-    }
-    
-    func update(with titles: [Titles]) {
-      self.titles = titles
-      self.mainFeedTable.reloadData()
-    }
 
     func passTheCurrent(tableIndex: Int, collectionViewIndex: Int) {
       if let navigationController = navigationController {
@@ -60,19 +51,21 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
-      return sectionTitles.count
+      return sectionTitles.count // ###
     }
 
     func divideDataBySections(cell: MainViewTableViewCell, indexPath: IndexPath) {
-      switch indexPath.section {
-      case Sections.guides.rawValue:
-        cell.configure(with: titles.map { $0.guides })
-      case Sections.visualThings.rawValue:
-        cell.configure(with: titles.map { $0.visualThings })
-      case Sections.gameAid.rawValue:
-        cell.configure(with: titles.map { $0.gameAid })
-      default:
-        print("")
+      if let presentedData = presenter {
+        switch indexPath.section {
+        case Sections.guides.rawValue:
+          cell.configure(with: presentedData.mappedGuides)
+        case Sections.visualThings.rawValue:
+          cell.configure(with: presentedData.mappedVisualThings)
+        case Sections.gameAid.rawValue:
+          cell.configure(with: presentedData.mappedGameAid)
+        default:
+          print("")
+        }
       }
     }
     
@@ -99,7 +92,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-      return sectionTitles[section].sectionTitles
+      return sectionTitles[section].sectionTitles // ###
     }
 }
 
