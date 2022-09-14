@@ -16,6 +16,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
   override func viewDidLoad() {
     super.viewDidLoad()
     self.mainFeedTable.reloadData()
+    mainFeedTable.backgroundColor = .black
     loadHeader()
   }
 
@@ -51,7 +52,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
-      return sectionTitles.count // ###
+      return sectionTitles.count
     }
 
     func divideDataBySections(cell: MainViewTableViewCell, indexPath: IndexPath) {
@@ -92,8 +93,12 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-      return sectionTitles[section].sectionTitles // ###
+      return sectionTitles[section].sectionTitles
     }
+
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+      (view as? UITableViewHeaderFooterView)?.textLabel?.textColor = .white
+  }
 }
 
 enum Sections: Int {
