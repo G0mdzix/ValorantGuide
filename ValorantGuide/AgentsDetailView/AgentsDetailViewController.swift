@@ -4,6 +4,9 @@ import SnapKit
 
 class AgentsDetailViewController: UIViewController, AgentsDetailView {
 
+  var presenter: AgentsDetailPresenter?
+  let space: String = " ✦ "
+  let mainSkillLabelText: String = "ABILITIES"
   let skillLabel = AgentsNameLabel()
   let agentNameLabel = AgentsNameLabel()
   let containerIconBackground = ContainerBackground()
@@ -13,8 +16,6 @@ class AgentsDetailViewController: UIViewController, AgentsDetailView {
   let containerThirdAbilityView = ContainerAbilities()
   let containerUltAbilityView = ContainerAbilities()
   let agentIconImageView = IconImage()
-  var presenter: AgentsDetailPresenter?
-  var agent: Agent?
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
@@ -42,20 +43,16 @@ class AgentsDetailViewController: UIViewController, AgentsDetailView {
       return containers
   }
 
-  func showAgentDetail(with agent: Agent) {
+  func showAgentDetail(with agent: AgentsViewModel) {
     let containers = containers()
     for (index, element) in containers.enumerated() {
-      if let agentDisplayIcon = agent.abilities[index].displayIcon {
-        element.skillIconImageView.loadFrom(URLAddress: agentDisplayIcon)
-      }
-        element.skillNameLabel.text = agent.abilities[index].displayName
-        element.skillDescriptionLabel.text = agent.abilities[index].description
+      element.skillIconImageView.loadFrom(URLAddress: agent.agentAbilities[index].displayIcon ?? K.sovaError)
+      element.skillNameLabel.text = agent.agentAbilities[index].displayName
+      element.skillDescriptionLabel.text = agent.agentAbilities[index].description
     }
-    if let role = agent.role {
-      agentNameLabel.text = agent.displayName + " ✦ " + agent.developerName + " ✦ " + role.displayName
-    }
-      agentIconImageView.loadFrom(URLAddress: agent.displayIconSmall)
-      skillLabel.text = "ABILITIES"
+      agentNameLabel.text = agent.name + space + agent.secondName + space + agent.roleName
+      agentIconImageView.loadFrom(URLAddress: agent.icon)
+      skillLabel.text = mainSkillLabelText
   }
 
   func contanerConstraint (centerXOfset: Int, viewBottom: (UIView), view: (UIView)) {

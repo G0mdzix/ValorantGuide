@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B821880128D1E898007B39AF /* WeaponSkinsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821880028D1E897007B39AF /* WeaponSkinsProtocol.swift */; };
+		B821880328D1E8BC007B39AF /* WeaponSkinsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821880228D1E8BC007B39AF /* WeaponSkinsInteractor.swift */; };
+		B821880528D1E8CE007B39AF /* WeaponSkinsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821880428D1E8CE007B39AF /* WeaponSkinsPresenter.swift */; };
+		B821880728D1E8E7007B39AF /* WeaponSkinsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821880628D1E8E7007B39AF /* WeaponSkinsEntity.swift */; };
+		B821880A28D1E900007B39AF /* WeaponSkinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821880928D1E900007B39AF /* WeaponSkinsViewController.swift */; };
 		B83F470B28903DF50070E13F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F470A28903DF50070E13F /* AppDelegate.swift */; };
 		B83F470D28903DF50070E13F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F470C28903DF50070E13F /* SceneDelegate.swift */; };
 		B83F471428903DF70070E13F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83F471328903DF70070E13F /* Assets.xcassets */; };
@@ -76,6 +81,11 @@
 		0BE3411C3D8F8D7193A5961F /* Pods_ValorantGuide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ValorantGuide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F58EE8CAAE1E309EFDCA4A /* Pods-ValorantGuide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ValorantGuide.release.xcconfig"; path = "Target Support Files/Pods-ValorantGuide/Pods-ValorantGuide.release.xcconfig"; sourceTree = "<group>"; };
 		9AF3A5863E6E558787DE975A /* Pods-ValorantGuide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ValorantGuide.debug.xcconfig"; path = "Target Support Files/Pods-ValorantGuide/Pods-ValorantGuide.debug.xcconfig"; sourceTree = "<group>"; };
+		B821880028D1E897007B39AF /* WeaponSkinsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponSkinsProtocol.swift; sourceTree = "<group>"; };
+		B821880228D1E8BC007B39AF /* WeaponSkinsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponSkinsInteractor.swift; sourceTree = "<group>"; };
+		B821880428D1E8CE007B39AF /* WeaponSkinsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponSkinsPresenter.swift; sourceTree = "<group>"; };
+		B821880628D1E8E7007B39AF /* WeaponSkinsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponSkinsEntity.swift; sourceTree = "<group>"; };
+		B821880928D1E900007B39AF /* WeaponSkinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponSkinsViewController.swift; sourceTree = "<group>"; };
 		B83F470728903DF50070E13F /* ValorantGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValorantGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83F470A28903DF50070E13F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B83F470C28903DF50070E13F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +180,33 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B82187FE28C763B0007B39AF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B82187FF28D1E872007B39AF /* WeaponSkins */ = {
+			isa = PBXGroup;
+			children = (
+				B821880828D1E8EF007B39AF /* View */,
+				B821880028D1E897007B39AF /* WeaponSkinsProtocol.swift */,
+				B821880228D1E8BC007B39AF /* WeaponSkinsInteractor.swift */,
+				B821880428D1E8CE007B39AF /* WeaponSkinsPresenter.swift */,
+				B821880628D1E8E7007B39AF /* WeaponSkinsEntity.swift */,
+			);
+			path = WeaponSkins;
+			sourceTree = "<group>";
+		};
+		B821880828D1E8EF007B39AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B821880928D1E900007B39AF /* WeaponSkinsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B83F46FE28903DF50070E13F = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +232,8 @@
 		B83F470928903DF50070E13F /* ValorantGuide */ = {
 			isa = PBXGroup;
 			children = (
+				B82187FF28D1E872007B39AF /* WeaponSkins */,
+				B82187FE28C763B0007B39AF /* Services */,
 				B844060D2898AF5C00609B95 /* Settings */,
 				B8A63ED72894A982006F9981 /* Common */,
 				B84405F82895695700609B95 /* Extensions */,
@@ -540,6 +579,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B88C5A3828AF1EE900D461AC /* DrawAgentsRouter.swift in Sources */,
+				B821880728D1E8E7007B39AF /* WeaponSkinsEntity.swift in Sources */,
 				B844061328A0916A00609B95 /* UIImage.swift in Sources */,
 				B83F470B28903DF50070E13F /* AppDelegate.swift in Sources */,
 				B83F470D28903DF50070E13F /* SceneDelegate.swift in Sources */,
@@ -561,10 +601,12 @@
 				B844061A28A1CB2900609B95 /* Animation.swift in Sources */,
 				B8A63ECE2893E49F006F9981 /* AgentsInteractor.swift in Sources */,
 				B88C5A2828AC071700D461AC /* LoadingScreenPresenter.swift in Sources */,
+				B821880128D1E898007B39AF /* WeaponSkinsProtocol.swift in Sources */,
 				B88C5A3428AF1ED500D461AC /* DrawAgentsInteractor.swift in Sources */,
 				B88C5A1E28A404D500D461AC /* MainViewRouter.swift in Sources */,
 				B844061828A0A1BA00609B95 /* LoadingScreenView.swift in Sources */,
 				B88C5A1728A3F92C00D461AC /* TitleCollectionMainViewCell.swift in Sources */,
+				B821880528D1E8CE007B39AF /* WeaponSkinsPresenter.swift in Sources */,
 				B84406012896C7FB00609B95 /* AgentDetailViewRouter.swift in Sources */,
 				B84405FC2895F57E00609B95 /* Colors.swift in Sources */,
 				B84406032896C83500609B95 /* AgentsDetailViewProtocols.swift in Sources */,
@@ -577,7 +619,9 @@
 				B88C5A3628AF1EDE00D461AC /* DrawAgentsPresenter.swift in Sources */,
 				B88C5A1028A3C23100D461AC /* MainViewTableViewCell.swift in Sources */,
 				B88C5A2428AC06EF00D461AC /* LoadingScreenRouter.swift in Sources */,
+				B821880328D1E8BC007B39AF /* WeaponSkinsInteractor.swift in Sources */,
 				B88C5A1928A4025600D461AC /* Common.swift in Sources */,
+				B821880A28D1E900007B39AF /* WeaponSkinsViewController.swift in Sources */,
 				B88C5A1C28A404C200D461AC /* MainViewProtocols.swift in Sources */,
 				B8A63ED62894A8AF006F9981 /* AgentsProtocols.swift in Sources */,
 			);

@@ -3,8 +3,6 @@ import UIKit
 
 protocol MainView {
   var presenter: MainPresenter? { get set }
-  func update(with titles: [Titles])
-  func update(with error: String)
   func updateSelectionTitles(with sectionTitles: [SelectionTitles])
 }
 
@@ -21,6 +19,9 @@ protocol MainRouter {
 }
 
 protocol MainPresenter {
+  var mappedGameAid: [String] { get }
+  var mappedVisualThings: [String] { get }
+  var mappedGuides: [String] { get }
   var router: MainRouter? { get set }
   var interactor: MainInteractor? { get set }
   var view: MainView? { get set }

@@ -3,6 +3,7 @@ import UIKit
 
 class MainViewPresenter: MainPresenter {
 
+  var titles: [Titles] = []
   var view: MainView?
   var router: MainRouter?
   var interactor: MainInteractor? {
@@ -15,9 +16,9 @@ class MainViewPresenter: MainPresenter {
   func titlesListDidFetch(with result: Result<[Titles], Error>) {
     switch result {
     case .success(let titles):
-      view?.update(with: titles)
+      self.titles = titles
     case .failure:
-      view?.update(with: "Something went wrong")
+      print("Something went wrong")
     }
   }
 
@@ -26,7 +27,7 @@ class MainViewPresenter: MainPresenter {
     case .success(let selectionTitles):
       view?.updateSelectionTitles(with: selectionTitles)
     case .failure:
-      view?.update(with: "Something went wrong")
+      print("Something went wrong")
     }
   }
 
@@ -36,5 +37,20 @@ class MainViewPresenter: MainPresenter {
       collectionViewIndex: collectionViewIndex,
       navigationConroller: navigationController
     )
+  }
+}
+
+extension MainViewPresenter {
+
+  var mappedGameAid: [String] {
+    return titles.map { $0.gameAid }
+  }
+
+  var mappedVisualThings: [String] {
+    return titles.map { $0.visualThings }
+  }
+
+  var mappedGuides: [String] {
+    return titles.map { $0.guides }
   }
 }

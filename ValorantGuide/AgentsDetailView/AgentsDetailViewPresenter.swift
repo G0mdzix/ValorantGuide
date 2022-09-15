@@ -4,7 +4,7 @@ class AgentsDetailViewPresenter: AgentsDetailPresenter {
  
   var router: AgentsDetailRouter?
   var view: AgentsDetailView?
-  var agent: Agent?
+  var agent: AgentsViewModel?
 
   func viewDidLoad() {
     if let agentModel = agent {

@@ -26,11 +26,14 @@ class DrawAgentsInteractor: InteractorProtocol {
     var uniqueSetOfAgents = Set(drewListOfAgents)
     if number > 0 {
       for _ in 1...number {
-        let random = agents.randomElement()!
-        drewListOfAgents.append(random)
-        uniqueSetOfAgents.insert(random)
-        if uniqueSetOfAgents.contains(random) {
-          uniqueSetOfAgents.insert(agents.randomElement()!)
+        if let randomAgent = agents.randomElement() {
+          drewListOfAgents.append(randomAgent)
+          uniqueSetOfAgents.insert(randomAgent)
+          if uniqueSetOfAgents.contains(randomAgent) {
+            if let subRandomAgent = agents.randomElement() {
+              uniqueSetOfAgents.insert(subRandomAgent)
+            }
+          }
         }
       }
     }
