@@ -13,6 +13,7 @@ class MainViewTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollec
     layout.scrollDirection = .horizontal
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
     collectionView.register(TitleCollectionMainViewCell.self, forCellWithReuseIdentifier: "cell")
+    collectionView.backgroundColor = .black
     return collectionView
   }()
 

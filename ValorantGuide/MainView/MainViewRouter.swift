@@ -36,7 +36,11 @@ class MainViewRouter: MainRouter {
       }
     case 1:
       switch collectionViewIndex {
-      case 0...2:
+      case 0:
+        if let selectpile = WeaponSkinsRouter.start().entry {
+          navigationConroller.pushViewController(selectpile, animated: true)
+        }
+      case 1...2:
         if let selectpile = LoadingScreenRouter.start().entry {
           navigationConroller.pushViewController(selectpile, animated: true)
         }
