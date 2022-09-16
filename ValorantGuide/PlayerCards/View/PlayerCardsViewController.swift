@@ -1,11 +1,11 @@
 import Foundation
 import UIKit
-import SnapKit
 
-class WeaponSkinsViewController: UIViewController, UICollectionViewDataSource,
-                                 UICollectionViewDelegateFlowLayout, SkinsView {
+class PlayerCardsViewController: UIViewController, PlayerCardsProtocoleView,
+                                 UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+  
+  var presenter: PlayerCardsProtocolePresenter?
 
-  var presenter: SkinsPresenter?
   var collectionview: UICollectionView!
   let cellId = "Cell"
   let heightOfItemInCollectionView: CGFloat = 500
@@ -22,7 +22,7 @@ class WeaponSkinsViewController: UIViewController, UICollectionViewDataSource,
     collectionview = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
     collectionview.dataSource = self
     collectionview.delegate = self
-    collectionview.register(WeaponSkinsCell.self, forCellWithReuseIdentifier: cellId)
+    collectionview.register(PlayerCardsCell.self, forCellWithReuseIdentifier: cellId)
     collectionview.showsVerticalScrollIndicator = false
     collectionview.backgroundColor = .black
     self.view.addSubview(collectionview)
@@ -30,19 +30,19 @@ class WeaponSkinsViewController: UIViewController, UICollectionViewDataSource,
 
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     guard let presenter = presenter else { return 0 }
-    return presenter.numberOfBundlesItems()
+    return presenter.numberOfPlayerCardsItems()
   }
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     guard let cell = collectionview.dequeueReusableCell(
       withReuseIdentifier: cellId, for: indexPath
     )
-    as? WeaponSkinsCell else {
+    as? PlayerCardsCell else {
     return UICollectionViewCell()
     }
     guard let presenter = presenter else { return UICollectionViewCell() }
-    cell.showCaseImageView.loadFrom(URLAddress: presenter.bundlesItem(at: indexPath.row).graphic)
-    cell.mainLabel.text = presenter.bundlesItem(at: indexPath.row).name
+    cell.showCaseImageView.loadFrom(URLAddress: presenter.playerCardsItem(at: indexPath.row).image)
+    cell.mainLabel.text = presenter.playerCardsItem(at: indexPath.row).name
     return cell
   }
 }
