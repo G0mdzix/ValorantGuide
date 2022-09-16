@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class WeaponSkinsCell: UICollectionViewCell {
+class SpraysCell: UICollectionViewCell {
 
   let mainLabel: UILabel = {
     let label = UILabel()

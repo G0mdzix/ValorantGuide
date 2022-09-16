@@ -14,6 +14,20 @@
 		B821880A28D1E900007B39AF /* WeaponSkinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821880928D1E900007B39AF /* WeaponSkinsViewController.swift */; };
 		B821880C28D1F911007B39AF /* WeaponSkinsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821880B28D1F911007B39AF /* WeaponSkinsRouter.swift */; };
 		B821880E28D22A24007B39AF /* WeaponSkinsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821880D28D22A24007B39AF /* WeaponSkinsCell.swift */; };
+		B821881228D36737007B39AF /* SpraysProtocole.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821881128D36737007B39AF /* SpraysProtocole.swift */; };
+		B821881428D36750007B39AF /* SpraysPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821881328D36750007B39AF /* SpraysPresenter.swift */; };
+		B821881628D3675C007B39AF /* SpraysRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821881528D3675C007B39AF /* SpraysRouter.swift */; };
+		B821881828D36769007B39AF /* SpraysInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821881728D36769007B39AF /* SpraysInteractor.swift */; };
+		B821881A28D36777007B39AF /* SpraysEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821881928D36777007B39AF /* SpraysEntity.swift */; };
+		B821881D28D36791007B39AF /* SpraysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821881C28D36791007B39AF /* SpraysViewController.swift */; };
+		B821881F28D367A3007B39AF /* SpraysCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821881E28D367A3007B39AF /* SpraysCell.swift */; };
+		B821882128D367D4007B39AF /* PlayerCardsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821882028D367D4007B39AF /* PlayerCardsProtocol.swift */; };
+		B821882328D367E1007B39AF /* PlayerCardsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821882228D367E1007B39AF /* PlayerCardsPresenter.swift */; };
+		B821882528D367EE007B39AF /* PlayerCardsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821882428D367EE007B39AF /* PlayerCardsRouter.swift */; };
+		B821882728D367FF007B39AF /* PlayerCardsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821882628D367FF007B39AF /* PlayerCardsInteractor.swift */; };
+		B821882928D36814007B39AF /* PlayerCardsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821882828D36814007B39AF /* PlayerCardsEntity.swift */; };
+		B821882C28D36825007B39AF /* PlayerCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821882B28D36825007B39AF /* PlayerCardsViewController.swift */; };
+		B821882E28D36831007B39AF /* PlayerCardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821882D28D36831007B39AF /* PlayerCardsCell.swift */; };
 		B83F470B28903DF50070E13F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F470A28903DF50070E13F /* AppDelegate.swift */; };
 		B83F470D28903DF50070E13F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F470C28903DF50070E13F /* SceneDelegate.swift */; };
 		B83F471428903DF70070E13F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83F471328903DF70070E13F /* Assets.xcassets */; };
@@ -90,6 +104,20 @@
 		B821880928D1E900007B39AF /* WeaponSkinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponSkinsViewController.swift; sourceTree = "<group>"; };
 		B821880B28D1F911007B39AF /* WeaponSkinsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponSkinsRouter.swift; sourceTree = "<group>"; };
 		B821880D28D22A24007B39AF /* WeaponSkinsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponSkinsCell.swift; sourceTree = "<group>"; };
+		B821881128D36737007B39AF /* SpraysProtocole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpraysProtocole.swift; sourceTree = "<group>"; };
+		B821881328D36750007B39AF /* SpraysPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpraysPresenter.swift; sourceTree = "<group>"; };
+		B821881528D3675C007B39AF /* SpraysRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpraysRouter.swift; sourceTree = "<group>"; };
+		B821881728D36769007B39AF /* SpraysInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpraysInteractor.swift; sourceTree = "<group>"; };
+		B821881928D36777007B39AF /* SpraysEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpraysEntity.swift; sourceTree = "<group>"; };
+		B821881C28D36791007B39AF /* SpraysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpraysViewController.swift; sourceTree = "<group>"; };
+		B821881E28D367A3007B39AF /* SpraysCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpraysCell.swift; sourceTree = "<group>"; };
+		B821882028D367D4007B39AF /* PlayerCardsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardsProtocol.swift; sourceTree = "<group>"; };
+		B821882228D367E1007B39AF /* PlayerCardsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardsPresenter.swift; sourceTree = "<group>"; };
+		B821882428D367EE007B39AF /* PlayerCardsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardsRouter.swift; sourceTree = "<group>"; };
+		B821882628D367FF007B39AF /* PlayerCardsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardsInteractor.swift; sourceTree = "<group>"; };
+		B821882828D36814007B39AF /* PlayerCardsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardsEntity.swift; sourceTree = "<group>"; };
+		B821882B28D36825007B39AF /* PlayerCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardsViewController.swift; sourceTree = "<group>"; };
+		B821882D28D36831007B39AF /* PlayerCardsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardsCell.swift; sourceTree = "<group>"; };
 		B83F470728903DF50070E13F /* ValorantGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValorantGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83F470A28903DF50070E13F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B83F470C28903DF50070E13F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -213,6 +241,50 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B821880F28D3668F007B39AF /* Sprays */ = {
+			isa = PBXGroup;
+			children = (
+				B821881B28D36782007B39AF /* View */,
+				B821881128D36737007B39AF /* SpraysProtocole.swift */,
+				B821881328D36750007B39AF /* SpraysPresenter.swift */,
+				B821881528D3675C007B39AF /* SpraysRouter.swift */,
+				B821881728D36769007B39AF /* SpraysInteractor.swift */,
+				B821881928D36777007B39AF /* SpraysEntity.swift */,
+			);
+			path = Sprays;
+			sourceTree = "<group>";
+		};
+		B821881028D36698007B39AF /* PlayerCards */ = {
+			isa = PBXGroup;
+			children = (
+				B821882A28D3681A007B39AF /* View */,
+				B821882028D367D4007B39AF /* PlayerCardsProtocol.swift */,
+				B821882228D367E1007B39AF /* PlayerCardsPresenter.swift */,
+				B821882428D367EE007B39AF /* PlayerCardsRouter.swift */,
+				B821882628D367FF007B39AF /* PlayerCardsInteractor.swift */,
+				B821882828D36814007B39AF /* PlayerCardsEntity.swift */,
+			);
+			path = PlayerCards;
+			sourceTree = "<group>";
+		};
+		B821881B28D36782007B39AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B821881C28D36791007B39AF /* SpraysViewController.swift */,
+				B821881E28D367A3007B39AF /* SpraysCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B821882A28D3681A007B39AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B821882B28D36825007B39AF /* PlayerCardsViewController.swift */,
+				B821882D28D36831007B39AF /* PlayerCardsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B83F46FE28903DF50070E13F = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +310,8 @@
 		B83F470928903DF50070E13F /* ValorantGuide */ = {
 			isa = PBXGroup;
 			children = (
+				B821881028D36698007B39AF /* PlayerCards */,
+				B821880F28D3668F007B39AF /* Sprays */,
 				B82187FF28D1E872007B39AF /* WeaponSkins */,
 				B82187FE28C763B0007B39AF /* Services */,
 				B844060D2898AF5C00609B95 /* Settings */,
@@ -585,6 +659,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B88C5A3828AF1EE900D461AC /* DrawAgentsRouter.swift in Sources */,
+				B821882528D367EE007B39AF /* PlayerCardsRouter.swift in Sources */,
 				B821880728D1E8E7007B39AF /* WeaponSkinsEntity.swift in Sources */,
 				B821880E28D22A24007B39AF /* WeaponSkinsCell.swift in Sources */,
 				B844061328A0916A00609B95 /* UIImage.swift in Sources */,
@@ -594,22 +669,32 @@
 				B8A63ED92894A993006F9981 /* Constans.swift in Sources */,
 				B8A63ED22893E4B8006F9981 /* AgentsListEntity.swift in Sources */,
 				B844061528A09D2000609B95 /* UIImageViewExtension.swift in Sources */,
+				B821881828D36769007B39AF /* SpraysInteractor.swift in Sources */,
 				B88C5A2028A404EB00D461AC /* MainViewInteractor.swift in Sources */,
 				B844061128A0911D00609B95 /* Containers.swift in Sources */,
 				B88C5A3228AF1EC900D461AC /* DrawAgentsProtocols.swift in Sources */,
 				B88C5A3028AF1EBF00D461AC /* DrawAgentsView.swift in Sources */,
+				B821881F28D367A3007B39AF /* SpraysCell.swift in Sources */,
 				B844060F289E0F4F00609B95 /* UILabels.swift in Sources */,
 				B8A63ED42893E4C9006F9981 /* AgentsRouter.swift in Sources */,
 				B84405FF2896B70C00609B95 /* AgentsDetailViewController.swift in Sources */,
+				B821881D28D36791007B39AF /* SpraysViewController.swift in Sources */,
+				B821882928D36814007B39AF /* PlayerCardsEntity.swift in Sources */,
+				B821881228D36737007B39AF /* SpraysProtocole.swift in Sources */,
 				B84405FA2895696D00609B95 /* UIViewExtension.swift in Sources */,
 				B84406052896C83F00609B95 /* AgentsDetailViewPresenter.swift in Sources */,
 				B88C5A2228A409D400D461AC /* MainViewPresenter.swift in Sources */,
 				B88C5A0E28A3BD2F00D461AC /* MainViewController.swift in Sources */,
+				B821881428D36750007B39AF /* SpraysPresenter.swift in Sources */,
 				B844061A28A1CB2900609B95 /* Animation.swift in Sources */,
 				B8A63ECE2893E49F006F9981 /* AgentsInteractor.swift in Sources */,
+				B821882328D367E1007B39AF /* PlayerCardsPresenter.swift in Sources */,
 				B88C5A2828AC071700D461AC /* LoadingScreenPresenter.swift in Sources */,
 				B821880128D1E898007B39AF /* WeaponSkinsProtocol.swift in Sources */,
+				B821882728D367FF007B39AF /* PlayerCardsInteractor.swift in Sources */,
+				B821881A28D36777007B39AF /* SpraysEntity.swift in Sources */,
 				B88C5A3428AF1ED500D461AC /* DrawAgentsInteractor.swift in Sources */,
+				B821882128D367D4007B39AF /* PlayerCardsProtocol.swift in Sources */,
 				B88C5A1E28A404D500D461AC /* MainViewRouter.swift in Sources */,
 				B844061828A0A1BA00609B95 /* LoadingScreenView.swift in Sources */,
 				B88C5A1728A3F92C00D461AC /* TitleCollectionMainViewCell.swift in Sources */,
@@ -628,9 +713,12 @@
 				B88C5A2428AC06EF00D461AC /* LoadingScreenRouter.swift in Sources */,
 				B821880328D1E8BC007B39AF /* WeaponSkinsInteractor.swift in Sources */,
 				B88C5A1928A4025600D461AC /* Common.swift in Sources */,
+				B821882C28D36825007B39AF /* PlayerCardsViewController.swift in Sources */,
+				B821882E28D36831007B39AF /* PlayerCardsCell.swift in Sources */,
 				B821880A28D1E900007B39AF /* WeaponSkinsViewController.swift in Sources */,
 				B88C5A1C28A404C200D461AC /* MainViewProtocols.swift in Sources */,
 				B821880C28D1F911007B39AF /* WeaponSkinsRouter.swift in Sources */,
+				B821881628D3675C007B39AF /* SpraysRouter.swift in Sources */,
 				B8A63ED62894A8AF006F9981 /* AgentsProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,46 +22,76 @@ class MainViewRouter: MainRouter {
   func pushToView(tableIndex: Int, collectionViewIndex: Int, navigationConroller: UINavigationController) {
     switch tableIndex {
     case 0:
-      switch collectionViewIndex {
-      case 0:
-        if let selectpile = AgentsRouter.start().entry {
-          navigationConroller.pushViewController(selectpile, animated: true)
-        }
-      case 1...2:
-        if let selectpile = LoadingScreenRouter.start().entry {
-          navigationConroller.pushViewController(selectpile, animated: true)
-        }
-      default:
-        print("")
-      }
+      selectViewFromFirstCollectionViewInde(
+        collectionViewIndex: collectionViewIndex,
+        navigationConroller: navigationConroller
+      )
     case 1:
-      switch collectionViewIndex {
-      case 0:
-        if let selectpile = WeaponSkinsRouter.start().entry {
-          navigationConroller.pushViewController(selectpile, animated: true)
-        }
-      case 1...2:
-        if let selectpile = LoadingScreenRouter.start().entry {
-          navigationConroller.pushViewController(selectpile, animated: true)
-        }
-      default:
-        print("")
-      }
+      selectViewFromSecondCollectionViewInde(
+        collectionViewIndex: collectionViewIndex,
+        navigationConroller: navigationConroller
+      )
     case 2:
-      switch collectionViewIndex {
-      case 0:
-        if let selectpile = DrawAgentsRouter.start().entry {
-          navigationConroller.pushViewController(selectpile, animated: true)
-        }
-      case 1...2:
-        if let selectpile = LoadingScreenRouter.start().entry {
-          navigationConroller.pushViewController(selectpile, animated: true)
-        }
-      default:
-        print("")
-      }
-    default:
-      ""
+      selectViewFromThirdCollectionViewInde(
+        collectionViewIndex: collectionViewIndex,
+        navigationConroller: navigationConroller
+      )
+    default: ""
       }
     }
+
+  func selectViewFromFirstCollectionViewInde(collectionViewIndex: Int, navigationConroller: UINavigationController) {
+    switch collectionViewIndex {
+    case 0:
+      if let selectpile = AgentsRouter.start().entry {
+        navigationConroller.pushViewController(selectpile, animated: true)
+      }
+    case 1...2:
+      if let selectpile = LoadingScreenRouter.start().entry {
+        navigationConroller.pushViewController(selectpile, animated: true)
+      }
+    default:
+      if let selectpile = LoadingScreenRouter.start().entry {
+        navigationConroller.pushViewController(selectpile, animated: true)
+      }
+    }
+  }
+
+  func selectViewFromSecondCollectionViewInde(collectionViewIndex: Int, navigationConroller: UINavigationController) {
+    switch collectionViewIndex {
+    case 0:
+      if let selectpile = WeaponSkinsRouter.start().entry {
+        navigationConroller.pushViewController(selectpile, animated: true)
+      }
+    case 1:
+      if let selectpile = SpraysRouter.start().entry {
+        navigationConroller.pushViewController(selectpile, animated: true)
+      }
+    case 2:
+      if let selectpile = PlayerCardsRouter.start().entry {
+        navigationConroller.pushViewController(selectpile, animated: true)
+      }
+    default:
+      if let selectpile = LoadingScreenRouter.start().entry {
+        navigationConroller.pushViewController(selectpile, animated: true)
+      }
+    }
+  }
+
+  func selectViewFromThirdCollectionViewInde(collectionViewIndex: Int, navigationConroller: UINavigationController) {
+    switch collectionViewIndex {
+    case 0:
+      if let selectpile = DrawAgentsRouter.start().entry {
+        navigationConroller.pushViewController(selectpile, animated: true)
+      }
+    case 1...2:
+      if let selectpile = LoadingScreenRouter.start().entry {
+        navigationConroller.pushViewController(selectpile, animated: true)
+      }
+    default:
+      if let selectpile = LoadingScreenRouter.start().entry {
+        navigationConroller.pushViewController(selectpile, animated: true)
+      }
+    }
+  }
 }

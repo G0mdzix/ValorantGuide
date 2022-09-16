@@ -6,8 +6,7 @@ class Common: NSObject {
     let data = [
       ["title": "Agents", "visual": "Weapon Skins", "aid": "Random"],
       ["title": "Gamemodes", "visual": "Sprays", "aid": "X"],
-      ["title": "Weapons", "visual": "Themes", "aid": "X"],
-      ["title": "Events", "visual": "Bundles", "aid": "X"]
+      ["title": "Weapons", "visual": "Cards", "aid": "X"]
     ]
   return data
     }
