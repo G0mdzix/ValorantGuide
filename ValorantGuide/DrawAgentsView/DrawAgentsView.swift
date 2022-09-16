@@ -17,6 +17,7 @@ class DrawAgentsView: UIViewController, ViewProtocol {
 
   lazy var slider: UISlider = {
     let slider = UISlider(frame: CGRect(x: 10, y: 100, width: 300, height: 20))
+      slider.accessibilityIdentifier = "drawAgentsSlider"
       slider.minimumValue = 0
       slider.maximumValue = 5
       slider.value = 0
