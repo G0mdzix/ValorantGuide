@@ -73,6 +73,9 @@
 		B8A63ED62894A8AF006F9981 /* AgentsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ED52894A8AF006F9981 /* AgentsProtocols.swift */; };
 		B8A63ED92894A993006F9981 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63ED82894A993006F9981 /* Constans.swift */; };
 		B8A63EDB2894A9A1006F9981 /* EntryPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63EDA2894A9A1006F9981 /* EntryPoint.swift */; };
+		B8E103EA28D4C3240055F08B /* DrawAgentsInteractorUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E103E928D4C3240055F08B /* DrawAgentsInteractorUnitTests.swift */; };
+		B8E103EE28D50C2E0055F08B /* DummyStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E103ED28D50C2E0055F08B /* DummyStruct.swift */; };
+		B8E103F028D511000055F08B /* AgentsTableUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E103EF28D511000055F08B /* AgentsTableUnitTests.swift */; };
 		DBC8CD50449F2CC42DB49BAF /* Pods_ValorantGuide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE3411C3D8F8D7193A5961F /* Pods_ValorantGuide.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +88,13 @@
 			remoteInfo = ValorantGuide;
 		};
 		B83F472828903DF70070E13F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B83F46FF28903DF50070E13F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B83F470628903DF50070E13F;
+			remoteInfo = ValorantGuide;
+		};
+		B8E103E428D4BB850055F08B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B83F46FF28903DF50070E13F /* Project object */;
 			proxyType = 1;
@@ -167,6 +177,10 @@
 		B8A63ED52894A8AF006F9981 /* AgentsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsProtocols.swift; sourceTree = "<group>"; };
 		B8A63ED82894A993006F9981 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
 		B8A63EDA2894A9A1006F9981 /* EntryPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryPoint.swift; sourceTree = "<group>"; };
+		B8E103DE28D4BB850055F08B /* ValorantGuideUI2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValorantGuideUI2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8E103E928D4C3240055F08B /* DrawAgentsInteractorUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawAgentsInteractorUnitTests.swift; sourceTree = "<group>"; };
+		B8E103ED28D50C2E0055F08B /* DummyStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyStruct.swift; sourceTree = "<group>"; };
+		B8E103EF28D511000055F08B /* AgentsTableUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsTableUnitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +206,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8E103DB28D4BB850055F08B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -210,13 +231,6 @@
 				65F58EE8CAAE1E309EFDCA4A /* Pods-ValorantGuide.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		B82187FE28C763B0007B39AF /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		B82187FF28D1E872007B39AF /* WeaponSkins */ = {
@@ -303,6 +317,7 @@
 				B83F470728903DF50070E13F /* ValorantGuide.app */,
 				B83F471D28903DF70070E13F /* ValorantGuideTests.xctest */,
 				B83F472728903DF70070E13F /* ValorantGuideUITests.xctest */,
+				B8E103DE28D4BB850055F08B /* ValorantGuideUI2Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -313,7 +328,6 @@
 				B821881028D36698007B39AF /* PlayerCards */,
 				B821880F28D3668F007B39AF /* Sprays */,
 				B82187FF28D1E872007B39AF /* WeaponSkins */,
-				B82187FE28C763B0007B39AF /* Services */,
 				B844060D2898AF5C00609B95 /* Settings */,
 				B8A63ED72894A982006F9981 /* Common */,
 				B84405F82895695700609B95 /* Extensions */,
@@ -332,6 +346,9 @@
 			isa = PBXGroup;
 			children = (
 				B83F472128903DF70070E13F /* ValorantGuideTests.swift */,
+				B8E103E928D4C3240055F08B /* DrawAgentsInteractorUnitTests.swift */,
+				B8E103ED28D50C2E0055F08B /* DummyStruct.swift */,
+				B8E103EF28D511000055F08B /* AgentsTableUnitTests.swift */,
 			);
 			path = ValorantGuideTests;
 			sourceTree = "<group>";
@@ -525,6 +542,24 @@
 			productReference = B83F472728903DF70070E13F /* ValorantGuideUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B8E103DD28D4BB850055F08B /* ValorantGuideUI2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8E103E628D4BB850055F08B /* Build configuration list for PBXNativeTarget "ValorantGuideUI2Tests" */;
+			buildPhases = (
+				B8E103DA28D4BB850055F08B /* Sources */,
+				B8E103DB28D4BB850055F08B /* Frameworks */,
+				B8E103DC28D4BB850055F08B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8E103E528D4BB850055F08B /* PBXTargetDependency */,
+			);
+			name = ValorantGuideUI2Tests;
+			productName = ValorantGuideUI2Tests;
+			productReference = B8E103DE28D4BB850055F08B /* ValorantGuideUI2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -546,6 +581,10 @@
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = B83F470628903DF50070E13F;
 					};
+					B8E103DD28D4BB850055F08B = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = B83F470628903DF50070E13F;
+					};
 				};
 			};
 			buildConfigurationList = B83F470228903DF50070E13F /* Build configuration list for PBXProject "ValorantGuide" */;
@@ -564,6 +603,7 @@
 				B83F470628903DF50070E13F /* ValorantGuide */,
 				B83F471C28903DF70070E13F /* ValorantGuideTests */,
 				B83F472628903DF70070E13F /* ValorantGuideUITests */,
+				B8E103DD28D4BB850055F08B /* ValorantGuideUI2Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -585,6 +625,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B83F472528903DF70070E13F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E103DC28D4BB850055F08B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -727,7 +774,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E103EE28D50C2E0055F08B /* DummyStruct.swift in Sources */,
 				B83F472228903DF70070E13F /* ValorantGuideTests.swift in Sources */,
+				B8E103F028D511000055F08B /* AgentsTableUnitTests.swift in Sources */,
+				B8E103EA28D4C3240055F08B /* DrawAgentsInteractorUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -737,6 +787,13 @@
 			files = (
 				B83F472E28903DF70070E13F /* ValorantGuideUITestsLaunchTests.swift in Sources */,
 				B83F472C28903DF70070E13F /* ValorantGuideUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E103DA28D4BB850055F08B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -752,6 +809,11 @@
 			isa = PBXTargetDependency;
 			target = B83F470628903DF50070E13F /* ValorantGuide */;
 			targetProxy = B83F472828903DF70070E13F /* PBXContainerItemProxy */;
+		};
+		B8E103E528D4BB850055F08B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B83F470628903DF50070E13F /* ValorantGuide */;
+			targetProxy = B8E103E428D4BB850055F08B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1002,6 +1064,40 @@
 			};
 			name = Release;
 		};
+		B8E103E728D4BB850055F08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9XS6X5TT86;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mateusz.ValorantGuideUI2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ValorantGuide;
+			};
+			name = Debug;
+		};
+		B8E103E828D4BB850055F08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9XS6X5TT86;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mateusz.ValorantGuideUI2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ValorantGuide;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1037,6 +1133,15 @@
 			buildConfigurations = (
 				B83F473828903DF70070E13F /* Debug */,
 				B83F473928903DF70070E13F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8E103E628D4BB850055F08B /* Build configuration list for PBXNativeTarget "ValorantGuideUI2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8E103E728D4BB850055F08B /* Debug */,
+				B8E103E828D4BB850055F08B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
